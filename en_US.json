@@ -1,0 +1,66 @@
+{
+  "ApiKeysPage": {
+    "title": "API Keys",
+    "description": "Manage your API keys and view their details."
+  },
+  "CreateApiKeyDialog": {
+    "limitZero": "The API key limit for this instance is set to 0, which means you cannot create any API keys. Please contact your administrator for more information.",
+    "limitExceeded": "You have reached the maximum number of API keys allowed for your account. ({current}/{limit})",
+    "button.create": "Create API Key",
+    "toast": {
+      "creationSuccess": "Your API key has been created successfully.",
+      "creationFailed": "Failed to create API key. Please try again.",
+      "copiedToClipboard": "API key copied to clipboard."
+    },
+    "dialog": {
+      "successTitle": "API Key created",
+      "successDescription": "Your new API key has been created successfully. Please copy and store it securely, as it will not be shown again.",
+      "apiKey": "API Key",
+      "createTitle": "Create API Key",
+      "createDescription": "Fill in the details below to create a new API key.",
+      "apiKeyName": "API Key Name",
+      "apiKeyNamePlaceholder": "My API Key",
+      "expiryDate": "Expiry Date",
+      "disableRateLimiting": "Disable Rate Limiting",
+      "close": "Close",
+      "creatingApiKey": "Creating API Key...",
+      "createApiKey": "Create API Key"
+    }
+  },
+  "ApiKeysTable": {
+    "never": "Never",
+    "toast": {
+      "apiKeyDiseased": "The API key has been disabled.",
+      "apiKeyEnabled": "The API key has been enabled.",
+      "apiKeyToggleFailed": "Failed to update API key status. Please try again.",
+      "apiKeyDeleted": "The API key has been deleted.",
+      "apiKeyDeleteFailed": "Failed to delete API key. Please try again."
+    },
+    "empty": {
+      "title": "No API Keys Yet",
+      "description": "You haven't created any API keys yet. Click the button below to create your first API key."
+    },
+    "input.searchPlaceholder": "Search API keys by name or ID...",
+    "tableHeader": {
+      "id": "ID",
+      "name": "Name",
+      "enabled": "Enabled",
+      "rateLimited": "Rate Limited",
+      "lastUsed": "Last Used",
+      "expiresAt": "Expires At",
+      "createdAt": "Created At",
+      "actions": "Actions"
+    },
+    "table": {
+      "noApiKeysFound": "No API keys found matching \"{query}\".",
+      "noApiKeysFoundGeneric": "No API keys found."
+    },
+    "dialog": {
+      "deleteTitle": "Delete API Key",
+      "deleteDescription": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
+      "cancel": "Cancel",
+      "deletingApiKey": "Deleting API Key...",
+      "deleteApiKey": "Delete API Key"
+    }
+  }
+}
