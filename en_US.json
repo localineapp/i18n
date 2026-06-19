@@ -10,13 +10,13 @@
       "create": "Create API Key"
     },
     "toast": {
-      "creationSuccess": "Your API key has been created successfully.",
+      "creationSuccess": "Your API key has been successfully created.",
       "creationFailed": "Failed to create API key. Please try again.",
       "copiedToClipboard": "API key copied to clipboard."
     },
     "dialog": {
       "successTitle": "API Key created",
-      "successDescription": "Your new API key has been created successfully. Please copy and store it securely, as it will not be shown again.",
+      "successDescription": "Your new API key has been successfully created. Please copy and store it securely, as it will not be shown again.",
       "apiKey": "API Key",
       "createTitle": "Create API Key",
       "createDescription": "Fill in the details below to create a new API key.",
@@ -32,10 +32,10 @@
   "ApiKeysTable": {
     "never": "Never",
     "toast": {
-      "apiKeyDiseased": "The API key has been disabled.",
-      "apiKeyEnabled": "The API key has been enabled.",
+      "apiKeyDisabled": "The API key has been successfully disabled.",
+      "apiKeyEnabled": "The API key has been successfully enabled.",
       "apiKeyToggleFailed": "Failed to update API key status. Please try again.",
-      "apiKeyDeleted": "The API key has been deleted.",
+      "apiKeyDeleted": "The API key has been successfully deleted.",
       "apiKeyDeleteFailed": "Failed to delete API key. Please try again."
     },
     "empty": {
@@ -90,12 +90,12 @@
     },
     "card": {
       "status": "Status:",
-      "notConfigured": "Not Configured",
+      "notConfigured": "Not Available",
       "connected": "Connected",
       "notConnected": "Not Connected"
     },
     "tooltip": {
-      "notConfigured": "{provider} login is not configured. Please contact your administrator."
+      "notConfigured": "{provider} login is not available. Please contact your administrator."
     }
   },
   "SecurityPage": {
@@ -104,15 +104,15 @@
   },
   "DataExportCard": {
     "toast": {
-      "dataExportSuccess": "Data export request submitted successfully. You will receive an email with the download link once it's ready."
+      "dataExportSuccess": "Data export request submitted. You will receive an email with the download link once it's ready."
     },
     "card": {
       "title": "Export Your Data",
       "description": "Request a copy of all your data stored in our system. This may take some time depending on the amount of data you have."
     },
     "button": {
-      "exporting": "Requesting Data Export...",
-      "export": "Request Data Export"
+      "exportingData": "Requesting Data Export...",
+      "exportData": "Request Data Export"
     }
   },
   "DeleteAccountCard": {
@@ -131,8 +131,8 @@
       "title": "Are you absolutely sure?",
       "description": "This action cannot be undone. This will permanently delete your account and all attached data.",
       "cancel": "Cancel",
-      "deleting": "Deleting Account...",
-      "delete": "Delete Account"
+      "deletingAccount": "Deleting Account...",
+      "deleteAccount": "Delete Account"
     }
   },
   "SecurityDetailsCard": {
@@ -147,9 +147,9 @@
     "button": {
       "addPassword": "Add Password",
       "changePassword": "Change Password",
-      "setupTwoFactor": "Setup 2FA",
+      "setupTwoFactor": "Set up 2FA",
       "manageTwoFactor": "Manage 2FA",
-      "setupPasskey": "Setup Passkey",
+      "setupPasskey": "Set up Passkey",
       "managePasskeys": "Manage Passkeys"
     },
     "card": {
@@ -165,8 +165,8 @@
         "description": "Enter your new email address that you want to associate with your account.",
         "inputLabel": "New Email",
         "inputPlaceholder": "Enter your new email address",
-        "updating": "Updating email...",
-        "update": "Update Email"
+        "updatingEmail": "Updating email...",
+        "updateEmail": "Update Email"
       },
       "changePassword": {
         "title": "Change Password",
@@ -175,8 +175,8 @@
         "currentPasswordPlaceholder": "Enter your current password",
         "newPasswordLabel": "New Password",
         "newPasswordPlaceholder": "Enter your new password",
-        "updating": "Changing password...",
-        "update": "Change Password"
+        "updatingPassword": "Changing password...",
+        "updatePassword": "Change Password"
       },
       "addPassword": {
         "title": "Add Password",
@@ -185,9 +185,145 @@
         "passwordPlaceholder": "Enter a password",
         "confirmPasswordLabel": "Confirm Password",
         "confirmPasswordPlaceholder": "Enter your password again",
-        "adding": "Adding password...",
-        "add": "Add Password"
+        "addingPassword": "Adding password...",
+        "addPassword": "Add Password"
       }
+    }
+  },
+  "SessionsPage": {
+    "title": "Sessions",
+    "description": "Manage your active sessions and view their details."
+  },
+  "RevokeOtherSessionsDialog": {
+    "toast": {
+      "sessionsRevoked": "All sessions revoked except the current one.",
+      "revokeFailed": "Failed to revoke sessions. Please try again."
+    },
+    "button": {
+      "revokeOtherSessions": "Revoke Other Sessions"
+    },
+    "dialog": {
+      "title": "Revoke Other Sessions",
+      "description": "Are you sure you want to revoke all other sessions except the current one? This will log out your account from all other devices and locations.",
+      "close": "Close",
+      "revokingOtherSessions": "Revoking sessions...",
+      "revokeOtherSessions": "Revoke Other Sessions"
+    }
+  },
+  "RevokeAllSessionsDialog": {
+    "toast": {
+      "sessionsRevoked": "All sessions revoked.",
+      "revokeFailed": "Failed to revoke sessions. Please try again."
+    },
+    "button": {
+      "revokeAllSessions": "Revoke All Sessions"
+    },
+    "dialog": {
+      "title": "Revoke All Sessions",
+      "description": "Are you sure you want to revoke all sessions? This will log out your account from all devices and locations, including the current one.",
+      "cancel": "Cancel",
+      "revokingAllSessions": "Revoking sessions...",
+      "revokeAllSessions": "Revoke All Sessions"
+    }
+  },
+  "SessionsTable": {
+    "toast": {
+      "copyToClipboard": "Session ID copied to clipboard.",
+      "copyFailed": "Failed to copy session ID. Please try again.",
+      "revokeSuccess": "The session has been successfully revoked.",
+      "revokeFailed": "Failed to revoke session. Please try again."
+    },
+    "tableHeader": {
+      "session": "Session",
+      "device": "Device",
+      "ipAddress": "IP Address",
+      "expiresAt": "Expires At",
+      "actions": "Actions"
+    },
+    "table": {
+      "noSessions": "No active sessions found.",
+      "createdAt": "Created {date}",
+      "noUserAgent": "No user agent information",
+      "noIpAddress": "No IP address information",
+      "updatedAt": "Updated {date}"
+    },
+    "tooltip": {
+      "cannotRevokeCurrentSession": "You can't revoke the current session from here. To revoke this session, please use the \"Revoke All Sessions\" option above."
+    }
+  },
+  "PublicProfilePage": {
+    "title": "Public Profile",
+    "description": "View and manage your public profile information."
+  },
+  "ProfileDetailsCard": {
+    "toast": {
+      "nameUpdated": "Your name has been successfully updated.",
+      "nameUpdateFailed": "Failed to update your name. Please try again.",
+      "avatarUpdated": "Your avatar has been successfully updated.",
+      "avatarUpdateFailed": "Failed to update your avatar. Please try again."
+    },
+    "card": {
+      "name": "Name:",
+      "email": "Email:",
+      "avatar": "Avatar:"
+    },
+    "dialog": {
+      "close": "Close",
+      "editName": {
+        "title": "Edit Name",
+        "description": "Enter your new name that you want to display on your profile.",
+        "inputLabel": "Name",
+        "inputPlaceholder": "Enter your name",
+        "updatingName": "Updating name...",
+        "updateName": "Update Name"
+      },
+      "editAvatar": {
+        "title": "Edit Avatar",
+        "description": "Upload a new avatar image to display on your profile. Supported formats are JPEG and PNG.",
+        "customUrl": {
+          "title": "Custom avatar URL",
+          "description": "This profile is using a custom avatar URL. If you save a different avatar source, this URL will be replaced and you will not be able to revert to this exact URL."
+        },
+        "preview": "Avatar Preview:",
+        "avatar": {
+          "none": {
+            "label": "None",
+            "description": "Use a generated avatar based on your name."
+          },
+          "gravatar": {
+            "label": "Gravatar",
+            "description": "Use the avatar associated with your email on Gravatar."
+          },
+          "github": {
+            "label": "GitHub",
+            "description": "Use the avatar from your linked GitHub account.",
+            "notLinked": "Not linked"
+          }
+        },
+        "updatingAvatar": "Updating avatar...",
+        "updateAvatar": "Update Avatar"
+      }
+    }
+  },
+  "ProfileInformationCard": {
+    "toast": {
+      "copyToClipboard": "User ID copied to clipboard.",
+      "copyFailed": "Failed to copy user ID. Please try again."
+    },
+    "card": {
+      "loading": "Loading profile information...",
+      "id": "ID:",
+      "role": "Role:",
+      "lastLoginMethod": "Last Login Method:",
+      "projectsLimit": "Projects Limit:",
+      "projectsLimitUnlimited": "Unlimited",
+      "emailVerified": "Email Verified:",
+      "emailVerifiedYes": "Yes",
+      "emailVerifiedNo": "No",
+      "banned": "Banned:",
+      "bannedYes": "Yes",
+      "bannedNo": "No",
+      "createdAt": "Created At:"
     }
   }
 }
