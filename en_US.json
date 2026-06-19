@@ -6,7 +6,9 @@
   "CreateApiKeyDialog": {
     "limitZero": "The API key limit for this instance is set to 0, which means you cannot create any API keys. Please contact your administrator for more information.",
     "limitExceeded": "You have reached the maximum number of API keys allowed for your account. ({current}/{limit})",
-    "button.create": "Create API Key",
+    "button": {
+      "create": "Create API Key"
+    },
     "toast": {
       "creationSuccess": "Your API key has been created successfully.",
       "creationFailed": "Failed to create API key. Please try again.",
@@ -40,7 +42,9 @@
       "title": "No API Keys Yet",
       "description": "You haven't created any API keys yet. Click the button below to create your first API key."
     },
-    "input.searchPlaceholder": "Search API keys by name or ID...",
+    "input": {
+      "searchPlaceholder": "Search API keys by name or ID..."
+    },
     "tableHeader": {
       "id": "ID",
       "name": "Name",
@@ -61,6 +65,129 @@
       "cancel": "Cancel",
       "deletingApiKey": "Deleting API Key...",
       "deleteApiKey": "Delete API Key"
+    }
+  },
+  "ConnectionsPage": {
+    "title": "Connections",
+    "description": "Manage your connected accounts. You can connect your account to third-party services for easier sign-in."
+  },
+  "ConnectionsCard": {
+    "providers": {
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "toast": {
+      "requestSent": "Redirecting to {provider} for verification...",
+      "requestFailed": "Failed to redirect to {provider}. {message}",
+      "unlinkSuccess": "Successfully disconnected from {provider}.",
+      "unlinkFailed": "Failed to disconnect from {provider}. {message}",
+      "tryAgain": "Please try again later or contact your administrator if the issue persists."
+    },
+    "button": {
+      "link": "Link",
+      "unlink": "Unlink"
+    },
+    "card": {
+      "status": "Status:",
+      "notConfigured": "Not Configured",
+      "connected": "Connected",
+      "notConnected": "Not Connected"
+    },
+    "tooltip": {
+      "notConfigured": "{provider} login is not configured. Please contact your administrator."
+    }
+  },
+  "SecurityPage": {
+    "title": "Security",
+    "description": "Manage your security settings and preferences."
+  },
+  "DataExportCard": {
+    "toast": {
+      "dataExportSuccess": "Data export request submitted successfully. You will receive an email with the download link once it's ready."
+    },
+    "card": {
+      "title": "Export Your Data",
+      "description": "Request a copy of all your data stored in our system. This may take some time depending on the amount of data you have."
+    },
+    "button": {
+      "exporting": "Requesting Data Export...",
+      "export": "Request Data Export"
+    }
+  },
+  "DeleteAccountCard": {
+    "toast": {
+      "accountDeleted": "Your account has been successfully deleted.",
+      "deleteFailed": "Failed to delete your account. Please try again."
+    },
+    "card": {
+      "title": "Delete Your Account",
+      "description": "Once you delete your account, there is no going back. Deleting your account will remove all attached data, including projects, from our system. Please be certain."
+    },
+    "button": {
+      "delete": "Delete Account"
+    },
+    "dialog": {
+      "title": "Are you absolutely sure?",
+      "description": "This action cannot be undone. This will permanently delete your account and all attached data.",
+      "cancel": "Cancel",
+      "deleting": "Deleting Account...",
+      "delete": "Delete Account"
+    }
+  },
+  "SecurityDetailsCard": {
+    "toast": {
+      "emailUpdated": "Your email has been successfully updated.",
+      "emailUpdateFailed": "Failed to update your email. Please try again.",
+      "passwordUpdated": "Your password has been successfully updated.",
+      "passwordUpdateFailed": "Failed to update your password. Please try again.",
+      "passwordAdded": "A password has been added to your account.",
+      "passwordAddFailed": "Adding a password to an account is not supported yet."
+    },
+    "button": {
+      "addPassword": "Add Password",
+      "changePassword": "Change Password",
+      "setupTwoFactor": "Setup 2FA",
+      "manageTwoFactor": "Manage 2FA",
+      "setupPasskey": "Setup Passkey",
+      "managePasskeys": "Manage Passkeys"
+    },
+    "card": {
+      "email": "Email:",
+      "password": "Password:",
+      "twoFactor": "2FA:",
+      "passkey": "Passkey:"
+    },
+    "dialog": {
+      "close": "Close",
+      "editEmail": {
+        "title": "Edit Email",
+        "description": "Enter your new email address that you want to associate with your account.",
+        "inputLabel": "New Email",
+        "inputPlaceholder": "Enter your new email address",
+        "updating": "Updating email...",
+        "update": "Update Email"
+      },
+      "changePassword": {
+        "title": "Change Password",
+        "description": "Enter your current password and a new password to update your account password.",
+        "currentPasswordLabel": "Current Password",
+        "currentPasswordPlaceholder": "Enter your current password",
+        "newPasswordLabel": "New Password",
+        "newPasswordPlaceholder": "Enter your new password",
+        "updating": "Changing password...",
+        "update": "Change Password"
+      },
+      "addPassword": {
+        "title": "Add Password",
+        "description": "Set a password for your account. This will allow you to log in using your email and password.",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter a password",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Enter your password again",
+        "adding": "Adding password...",
+        "add": "Add Password"
+      }
     }
   }
 }
