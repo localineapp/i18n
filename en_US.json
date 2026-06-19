@@ -1,329 +1,329 @@
 {
   "ApiKeysPage": {
-    "title": "API Keys",
-    "description": "Manage your API keys and view their details."
-  },
-  "CreateApiKeyDialog": {
-    "limitZero": "The API key limit for this instance is set to 0, which means you cannot create any API keys. Please contact your administrator for more information.",
-    "limitExceeded": "You have reached the maximum number of API keys allowed for your account. ({current}/{limit})",
-    "button": {
-      "create": "Create API Key"
-    },
-    "toast": {
-      "creationSuccess": "Your API key has been successfully created.",
-      "creationFailed": "Failed to create API key. Please try again.",
-      "copiedToClipboard": "API key copied to clipboard."
-    },
-    "dialog": {
-      "successTitle": "API Key created",
-      "successDescription": "Your new API key has been successfully created. Please copy and store it securely, as it will not be shown again.",
-      "apiKey": "API Key",
-      "createTitle": "Create API Key",
-      "createDescription": "Fill in the details below to create a new API key.",
-      "apiKeyName": "API Key Name",
-      "apiKeyNamePlaceholder": "My API Key",
-      "expiryDate": "Expiry Date",
-      "disableRateLimiting": "Disable Rate Limiting",
-      "close": "Close",
-      "creatingApiKey": "Creating API Key...",
-      "createApiKey": "Create API Key"
-    }
+    "description": "Manage your API keys and view their details.",
+    "title": "API Keys"
   },
   "ApiKeysTable": {
-    "never": "Never",
-    "toast": {
-      "apiKeyDisabled": "The API key has been successfully disabled.",
-      "apiKeyEnabled": "The API key has been successfully enabled.",
-      "apiKeyToggleFailed": "Failed to update API key status. Please try again.",
-      "apiKeyDeleted": "The API key has been successfully deleted.",
-      "apiKeyDeleteFailed": "Failed to delete API key. Please try again."
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteApiKey": "Delete API Key",
+      "deleteDescription": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
+      "deleteTitle": "Delete API Key",
+      "deletingApiKey": "Deleting API Key..."
     },
     "empty": {
-      "title": "No API Keys Yet",
-      "description": "You haven't created any API keys yet. Click the button below to create your first API key."
+      "description": "You haven't created any API keys yet. Click the button below to create your first API key.",
+      "title": "No API Keys Yet"
     },
     "input": {
       "searchPlaceholder": "Search API keys by name or ID..."
     },
-    "tableHeader": {
-      "id": "ID",
-      "name": "Name",
-      "enabled": "Enabled",
-      "rateLimited": "Rate Limited",
-      "lastUsed": "Last Used",
-      "expiresAt": "Expires At",
-      "createdAt": "Created At",
-      "actions": "Actions"
-    },
+    "never": "Never",
     "table": {
       "noApiKeysFound": "No API keys found matching \"{query}\".",
       "noApiKeysFoundGeneric": "No API keys found."
     },
-    "dialog": {
-      "deleteTitle": "Delete API Key",
-      "deleteDescription": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
-      "cancel": "Cancel",
-      "deletingApiKey": "Deleting API Key...",
-      "deleteApiKey": "Delete API Key"
-    }
-  },
-  "ConnectionsPage": {
-    "title": "Connections",
-    "description": "Manage your connected accounts. You can connect your account to third-party services for easier sign-in."
-  },
-  "ConnectionsCard": {
-    "providers": {
-      "google": "Google",
-      "github": "GitHub",
-      "discord": "Discord"
+    "tableHeader": {
+      "actions": "Actions",
+      "createdAt": "Created At",
+      "enabled": "Enabled",
+      "expiresAt": "Expires At",
+      "id": "ID",
+      "lastUsed": "Last Used",
+      "name": "Name",
+      "rateLimited": "Rate Limited"
     },
     "toast": {
-      "requestSent": "Redirecting to {provider} for verification...",
-      "requestFailed": "Failed to redirect to {provider}. {message}",
-      "unlinkSuccess": "Successfully disconnected from {provider}.",
-      "unlinkFailed": "Failed to disconnect from {provider}. {message}",
-      "tryAgain": "Please try again later or contact your administrator if the issue persists."
-    },
+      "apiKeyDeleted": "The API key has been successfully deleted.",
+      "apiKeyDeleteFailed": "Failed to delete API key. Please try again.",
+      "apiKeyDisabled": "The API key has been successfully disabled.",
+      "apiKeyEnabled": "The API key has been successfully enabled.",
+      "apiKeyToggleFailed": "Failed to update API key status. Please try again."
+    }
+  },
+  "ConnectionsCard": {
     "button": {
       "link": "Link",
       "unlink": "Unlink"
     },
     "card": {
-      "status": "Status:",
-      "notConfigured": "Not Available",
       "connected": "Connected",
-      "notConnected": "Not Connected"
+      "notConfigured": "Not Available",
+      "notConnected": "Not Connected",
+      "status": "Status:"
+    },
+    "providers": {
+      "discord": "Discord",
+      "github": "GitHub",
+      "google": "Google"
+    },
+    "toast": {
+      "requestFailed": "Failed to redirect to {provider}. {message}",
+      "requestSent": "Redirecting to {provider} for verification...",
+      "tryAgain": "Please try again later or contact your administrator if the issue persists.",
+      "unlinkFailed": "Failed to disconnect from {provider}. {message}",
+      "unlinkSuccess": "Successfully disconnected from {provider}."
     },
     "tooltip": {
       "notConfigured": "{provider} login is not available. Please contact your administrator."
     }
   },
-  "SecurityPage": {
-    "title": "Security",
-    "description": "Manage your security settings and preferences."
+  "ConnectionsPage": {
+    "description": "Manage your connected accounts. You can connect your account to third-party services for easier sign-in.",
+    "title": "Connections"
+  },
+  "CreateApiKeyDialog": {
+    "button": {
+      "create": "Create API Key"
+    },
+    "dialog": {
+      "apiKey": "API Key",
+      "apiKeyName": "API Key Name",
+      "apiKeyNamePlaceholder": "My API Key",
+      "close": "Close",
+      "createApiKey": "Create API Key",
+      "createDescription": "Fill in the details below to create a new API key.",
+      "createTitle": "Create API Key",
+      "creatingApiKey": "Creating API Key...",
+      "disableRateLimiting": "Disable Rate Limiting",
+      "expiryDate": "Expiry Date",
+      "successDescription": "Your new API key has been successfully created. Please copy and store it securely, as it will not be shown again.",
+      "successTitle": "API Key created"
+    },
+    "limitExceeded": "You have reached the maximum number of API keys allowed for your account. ({current}/{limit})",
+    "limitZero": "The API key limit for this instance is set to 0, which means you cannot create any API keys. Please contact your administrator for more information.",
+    "toast": {
+      "copiedToClipboard": "API key copied to clipboard.",
+      "creationFailed": "Failed to create API key. Please try again.",
+      "creationSuccess": "Your API key has been successfully created."
+    }
   },
   "DataExportCard": {
-    "toast": {
-      "dataExportSuccess": "Data export request submitted. You will receive an email with the download link once it's ready."
+    "button": {
+      "exportData": "Request Data Export",
+      "exportingData": "Requesting Data Export..."
     },
     "card": {
-      "title": "Export Your Data",
-      "description": "Request a copy of all your data stored in our system. This may take some time depending on the amount of data you have."
+      "description": "Request a copy of all your data stored in our system. This may take some time depending on the amount of data you have.",
+      "title": "Export Your Data"
     },
-    "button": {
-      "exportingData": "Requesting Data Export...",
-      "exportData": "Request Data Export"
+    "toast": {
+      "dataExportSuccess": "Data export request submitted. You will receive an email with the download link once it's ready."
     }
   },
   "DeleteAccountCard": {
-    "toast": {
-      "accountDeleted": "Your account has been successfully deleted.",
-      "deleteFailed": "Failed to delete your account. Please try again."
-    },
-    "card": {
-      "title": "Delete Your Account",
-      "description": "Once you delete your account, there is no going back. Deleting your account will remove all attached data, including projects, from our system. Please be certain."
-    },
     "button": {
       "delete": "Delete Account"
     },
-    "dialog": {
-      "title": "Are you absolutely sure?",
-      "description": "This action cannot be undone. This will permanently delete your account and all attached data.",
-      "cancel": "Cancel",
-      "deletingAccount": "Deleting Account...",
-      "deleteAccount": "Delete Account"
-    }
-  },
-  "SecurityDetailsCard": {
-    "toast": {
-      "emailUpdated": "Your email has been successfully updated.",
-      "emailUpdateFailed": "Failed to update your email. Please try again.",
-      "passwordUpdated": "Your password has been successfully updated.",
-      "passwordUpdateFailed": "Failed to update your password. Please try again.",
-      "passwordAdded": "A password has been added to your account.",
-      "passwordAddFailed": "Adding a password to an account is not supported yet."
-    },
-    "button": {
-      "addPassword": "Add Password",
-      "changePassword": "Change Password",
-      "setupTwoFactor": "Set up 2FA",
-      "manageTwoFactor": "Manage 2FA",
-      "setupPasskey": "Set up Passkey",
-      "managePasskeys": "Manage Passkeys"
-    },
     "card": {
-      "email": "Email:",
-      "password": "Password:",
-      "twoFactor": "2FA:",
-      "passkey": "Passkey:"
+      "description": "Once you delete your account, there is no going back. Deleting your account will remove all attached data, including projects, from our system. Please be certain.",
+      "title": "Delete Your Account"
     },
     "dialog": {
-      "close": "Close",
-      "editEmail": {
-        "title": "Edit Email",
-        "description": "Enter your new email address that you want to associate with your account.",
-        "inputLabel": "New Email",
-        "inputPlaceholder": "Enter your new email address",
-        "updatingEmail": "Updating email...",
-        "updateEmail": "Update Email"
-      },
-      "changePassword": {
-        "title": "Change Password",
-        "description": "Enter your current password and a new password to update your account password.",
-        "currentPasswordLabel": "Current Password",
-        "currentPasswordPlaceholder": "Enter your current password",
-        "newPasswordLabel": "New Password",
-        "newPasswordPlaceholder": "Enter your new password",
-        "updatingPassword": "Changing password...",
-        "updatePassword": "Change Password"
-      },
-      "addPassword": {
-        "title": "Add Password",
-        "description": "Set a password for your account. This will allow you to log in using your email and password.",
-        "passwordLabel": "Password",
-        "passwordPlaceholder": "Enter a password",
-        "confirmPasswordLabel": "Confirm Password",
-        "confirmPasswordPlaceholder": "Enter your password again",
-        "addingPassword": "Adding password...",
-        "addPassword": "Add Password"
-      }
-    }
-  },
-  "SessionsPage": {
-    "title": "Sessions",
-    "description": "Manage your active sessions and view their details."
-  },
-  "RevokeOtherSessionsDialog": {
-    "toast": {
-      "sessionsRevoked": "All sessions revoked except the current one.",
-      "revokeFailed": "Failed to revoke sessions. Please try again."
-    },
-    "button": {
-      "revokeOtherSessions": "Revoke Other Sessions"
-    },
-    "dialog": {
-      "title": "Revoke Other Sessions",
-      "description": "Are you sure you want to revoke all other sessions except the current one? This will log out your account from all other devices and locations.",
-      "close": "Close",
-      "revokingOtherSessions": "Revoking sessions...",
-      "revokeOtherSessions": "Revoke Other Sessions"
-    }
-  },
-  "RevokeAllSessionsDialog": {
-    "toast": {
-      "sessionsRevoked": "All sessions revoked.",
-      "revokeFailed": "Failed to revoke sessions. Please try again."
-    },
-    "button": {
-      "revokeAllSessions": "Revoke All Sessions"
-    },
-    "dialog": {
-      "title": "Revoke All Sessions",
-      "description": "Are you sure you want to revoke all sessions? This will log out your account from all devices and locations, including the current one.",
       "cancel": "Cancel",
-      "revokingAllSessions": "Revoking sessions...",
-      "revokeAllSessions": "Revoke All Sessions"
-    }
-  },
-  "SessionsTable": {
+      "deleteAccount": "Delete Account",
+      "deletingAccount": "Deleting Account...",
+      "description": "This action cannot be undone. This will permanently delete your account and all attached data.",
+      "title": "Are you absolutely sure?"
+    },
     "toast": {
-      "copyToClipboard": "Session ID copied to clipboard.",
-      "copyFailed": "Failed to copy session ID. Please try again.",
-      "revokeSuccess": "The session has been successfully revoked.",
-      "revokeFailed": "Failed to revoke session. Please try again."
-    },
-    "tableHeader": {
-      "session": "Session",
-      "device": "Device",
-      "ipAddress": "IP Address",
-      "expiresAt": "Expires At",
-      "actions": "Actions"
-    },
-    "table": {
-      "noSessions": "No active sessions found.",
-      "createdAt": "Created {date}",
-      "noUserAgent": "No user agent information",
-      "noIpAddress": "No IP address information",
-      "updatedAt": "Updated {date}"
-    },
-    "tooltip": {
-      "cannotRevokeCurrentSession": "You can't revoke the current session from here. To revoke this session, please use the \"Revoke All Sessions\" option above."
+      "accountDeleted": "Your account has been successfully deleted.",
+      "deleteFailed": "Failed to delete your account. Please try again."
     }
-  },
-  "PublicProfilePage": {
-    "title": "Public Profile",
-    "description": "View and manage your public profile information."
   },
   "ProfileDetailsCard": {
-    "toast": {
-      "nameUpdated": "Your name has been successfully updated.",
-      "nameUpdateFailed": "Failed to update your name. Please try again.",
-      "avatarUpdated": "Your avatar has been successfully updated.",
-      "avatarUpdateFailed": "Failed to update your avatar. Please try again."
-    },
     "card": {
-      "name": "Name:",
+      "avatar": "Avatar:",
       "email": "Email:",
-      "avatar": "Avatar:"
+      "name": "Name:"
     },
     "dialog": {
       "close": "Close",
+      "editAvatar": {
+        "avatar": {
+          "github": {
+            "description": "Use the avatar from your linked GitHub account.",
+            "label": "GitHub",
+            "notLinked": "Not linked"
+          },
+          "gravatar": {
+            "description": "Use the avatar associated with your email on Gravatar.",
+            "label": "Gravatar"
+          },
+          "none": {
+            "description": "Use a generated avatar based on your name.",
+            "label": "None"
+          }
+        },
+        "customUrl": {
+          "description": "This profile is using a custom avatar URL. If you save a different avatar source, this URL will be replaced and you will not be able to revert to this exact URL.",
+          "title": "Custom avatar URL"
+        },
+        "description": "Upload a new avatar image to display on your profile. Supported formats are JPEG and PNG.",
+        "preview": "Avatar Preview:",
+        "title": "Edit Avatar",
+        "updateAvatar": "Update Avatar",
+        "updatingAvatar": "Updating avatar..."
+      },
       "editName": {
-        "title": "Edit Name",
         "description": "Enter your new name that you want to display on your profile.",
         "inputLabel": "Name",
         "inputPlaceholder": "Enter your name",
-        "updatingName": "Updating name...",
-        "updateName": "Update Name"
-      },
-      "editAvatar": {
-        "title": "Edit Avatar",
-        "description": "Upload a new avatar image to display on your profile. Supported formats are JPEG and PNG.",
-        "customUrl": {
-          "title": "Custom avatar URL",
-          "description": "This profile is using a custom avatar URL. If you save a different avatar source, this URL will be replaced and you will not be able to revert to this exact URL."
-        },
-        "preview": "Avatar Preview:",
-        "avatar": {
-          "none": {
-            "label": "None",
-            "description": "Use a generated avatar based on your name."
-          },
-          "gravatar": {
-            "label": "Gravatar",
-            "description": "Use the avatar associated with your email on Gravatar."
-          },
-          "github": {
-            "label": "GitHub",
-            "description": "Use the avatar from your linked GitHub account.",
-            "notLinked": "Not linked"
-          }
-        },
-        "updatingAvatar": "Updating avatar...",
-        "updateAvatar": "Update Avatar"
+        "title": "Edit Name",
+        "updateName": "Update Name",
+        "updatingName": "Updating name..."
       }
+    },
+    "toast": {
+      "avatarUpdated": "Your avatar has been successfully updated.",
+      "avatarUpdateFailed": "Failed to update your avatar. Please try again.",
+      "nameUpdated": "Your name has been successfully updated.",
+      "nameUpdateFailed": "Failed to update your name. Please try again."
     }
   },
   "ProfileInformationCard": {
-    "toast": {
-      "copyToClipboard": "User ID copied to clipboard.",
-      "copyFailed": "Failed to copy user ID. Please try again."
-    },
     "card": {
-      "loading": "Loading profile information...",
+      "banned": "Banned:",
+      "bannedNo": "No",
+      "bannedYes": "Yes",
+      "createdAt": "Created At:",
+      "emailVerified": "Email Verified:",
+      "emailVerifiedNo": "No",
+      "emailVerifiedYes": "Yes",
       "id": "ID:",
-      "role": "Role:",
       "lastLoginMethod": "Last Login Method:",
+      "loading": "Loading profile information...",
       "projectsLimit": "Projects Limit:",
       "projectsLimitUnlimited": "Unlimited",
-      "emailVerified": "Email Verified:",
-      "emailVerifiedYes": "Yes",
-      "emailVerifiedNo": "No",
-      "banned": "Banned:",
-      "bannedYes": "Yes",
-      "bannedNo": "No",
-      "createdAt": "Created At:"
+      "role": "Role:"
+    },
+    "toast": {
+      "copyFailed": "Failed to copy user ID. Please try again.",
+      "copyToClipboard": "User ID copied to clipboard."
+    }
+  },
+  "PublicProfilePage": {
+    "description": "View and manage your public profile information.",
+    "title": "Public Profile"
+  },
+  "RevokeAllSessionsDialog": {
+    "button": {
+      "revokeAllSessions": "Revoke All Sessions"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "description": "Are you sure you want to revoke all sessions? This will log out your account from all devices and locations, including the current one.",
+      "revokeAllSessions": "Revoke All Sessions",
+      "revokingAllSessions": "Revoking sessions...",
+      "title": "Revoke All Sessions"
+    },
+    "toast": {
+      "revokeFailed": "Failed to revoke sessions. Please try again.",
+      "sessionsRevoked": "All sessions revoked."
+    }
+  },
+  "RevokeOtherSessionsDialog": {
+    "button": {
+      "revokeOtherSessions": "Revoke Other Sessions"
+    },
+    "dialog": {
+      "close": "Close",
+      "description": "Are you sure you want to revoke all other sessions except the current one? This will log out your account from all other devices and locations.",
+      "revokeOtherSessions": "Revoke Other Sessions",
+      "revokingOtherSessions": "Revoking sessions...",
+      "title": "Revoke Other Sessions"
+    },
+    "toast": {
+      "revokeFailed": "Failed to revoke sessions. Please try again.",
+      "sessionsRevoked": "All sessions revoked except the current one."
+    }
+  },
+  "SecurityDetailsCard": {
+    "button": {
+      "addPassword": "Add Password",
+      "changePassword": "Change Password",
+      "managePasskeys": "Manage Passkeys",
+      "manageTwoFactor": "Manage 2FA",
+      "setupPasskey": "Set up Passkey",
+      "setupTwoFactor": "Set up 2FA"
+    },
+    "card": {
+      "email": "Email:",
+      "passkey": "Passkey:",
+      "password": "Password:",
+      "twoFactor": "2FA:"
+    },
+    "dialog": {
+      "addPassword": {
+        "addingPassword": "Adding password...",
+        "addPassword": "Add Password",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Enter your password again",
+        "description": "Set a password for your account. This will allow you to log in using your email and password.",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter a password",
+        "title": "Add Password"
+      },
+      "changePassword": {
+        "currentPasswordLabel": "Current Password",
+        "currentPasswordPlaceholder": "Enter your current password",
+        "description": "Enter your current password and a new password to update your account password.",
+        "newPasswordLabel": "New Password",
+        "newPasswordPlaceholder": "Enter your new password",
+        "title": "Change Password",
+        "updatePassword": "Change Password",
+        "updatingPassword": "Changing password..."
+      },
+      "close": "Close",
+      "editEmail": {
+        "description": "Enter your new email address that you want to associate with your account.",
+        "inputLabel": "New Email",
+        "inputPlaceholder": "Enter your new email address",
+        "title": "Edit Email",
+        "updateEmail": "Update Email",
+        "updatingEmail": "Updating email..."
+      }
+    },
+    "toast": {
+      "emailUpdated": "Your email has been successfully updated.",
+      "emailUpdateFailed": "Failed to update your email. Please try again.",
+      "passwordAdded": "A password has been added to your account.",
+      "passwordAddFailed": "Adding a password to an account is not supported yet.",
+      "passwordUpdated": "Your password has been successfully updated.",
+      "passwordUpdateFailed": "Failed to update your password. Please try again."
+    }
+  },
+  "SecurityPage": {
+    "description": "Manage your security settings and preferences.",
+    "title": "Security"
+  },
+  "SessionsPage": {
+    "description": "Manage your active sessions and view their details.",
+    "title": "Sessions"
+  },
+  "SessionsTable": {
+    "table": {
+      "createdAt": "Created {date}",
+      "noIpAddress": "No IP address information",
+      "noSessions": "No active sessions found.",
+      "noUserAgent": "No user agent information",
+      "updatedAt": "Updated {date}"
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "device": "Device",
+      "expiresAt": "Expires At",
+      "ipAddress": "IP Address",
+      "session": "Session"
+    },
+    "toast": {
+      "copyFailed": "Failed to copy session ID. Please try again.",
+      "copyToClipboard": "Session ID copied to clipboard.",
+      "revokeFailed": "Failed to revoke session. Please try again.",
+      "revokeSuccess": "The session has been successfully revoked."
+    },
+    "tooltip": {
+      "cannotRevokeCurrentSession": "You can't revoke the current session from here. To revoke this session, please use the \"Revoke All Sessions\" option above."
     }
   }
 }
