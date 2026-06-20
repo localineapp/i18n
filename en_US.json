@@ -1,4 +1,78 @@
 {
+  "AccessDeniedPage": {
+    "button": {
+      "goToDashboard": "Go back to dashboard",
+      "signIn": "Sign into your account"
+    },
+    "description": "You do not have permission to access this resource. Please contact your administrator if you believe this is an mistake.",
+    "title": "Access Denied"
+  },
+  "AdminLocalesPage": {
+    "description": "View and manage all locales in the system.",
+    "title": "Locales"
+  },
+  "AdminLocalesTable": {
+    "deleteDialog": {
+      "cancel": "Cancel",
+      "deleteLocale": "Delete Locale",
+      "deletingLocale": "Deleting locale...",
+      "description": "This action cannot be undone. This will permanently delete the locale \"{displayName}\" ({id}) and all associated translations in all projects. Please be certain.",
+      "title": "Are you absolutely sure?"
+    },
+    "empty": {
+      "description": "There have been no locales created yet. Click the button below to create your first locale.",
+      "title": "No locales Yet"
+    },
+    "input": {
+      "searchPlaceholder": "Search locales by name, language, region, code or ID..."
+    },
+    "invalidFlag": "Invalid flag code",
+    "none": "None",
+    "sheet": {
+      "close": "Close",
+      "codeLabel": "Locale Code",
+      "codePlaceholder": "en_US",
+      "description": "Update the details of the locale. Changes to the locale will be reflected in all projects that use this locale.",
+      "displayNameLabel": "Display Name",
+      "displayNamePlaceholder": "English (United States)",
+      "enabledLabel": "Enabled",
+      "enabledNo": "No",
+      "enabledYes": "Yes",
+      "flagLabel": "Flag (optional)",
+      "languageLabel": "Language",
+      "languagePlaceholder": "English",
+      "regionLabel": "Region (optional)",
+      "regionPlaceholder": "United States",
+      "title": "Edit {displayName} ({id})",
+      "updateLocale": "Update Locale",
+      "updatingLocale": "Updating locale..."
+    },
+    "table": {
+      "noLocalesFound": "No locales found matching \"{query}\".",
+      "noLocalesFoundGeneric": "No locales found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "code": "Locale Code",
+      "displayName": "Display Name",
+      "enabled": "Enabled",
+      "enabledHover": "Indicates whether the locale can be selected by users in their projects.",
+      "flag": "Flag",
+      "id": "ID",
+      "language": "Language",
+      "region": "Region"
+    },
+    "toast": {
+      "deleteFailed": "Failed to delete locale. Please try again.",
+      "deleteSuccess": "The locale \"{displayName}\" ({id}) has been successfully deleted.",
+      "updateFailed": "Failed to update locale. Please try again.",
+      "updateSuccess": "The locale \"{displayName}\" ({id}) has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDelete": "You don't have permission to delete locales.",
+      "noPermissionUpdate": "You don't have permission to update locales."
+    }
+  },
   "ApiKeysPage": {
     "description": "Manage your API keys and view their details.",
     "title": "API Keys"
@@ -74,7 +148,7 @@
   },
   "CreateApiKeyDialog": {
     "button": {
-      "create": "Create API Key"
+      "createApiKey": "Create API Key"
     },
     "dialog": {
       "apiKey": "API Key",
@@ -98,6 +172,31 @@
       "creationSuccess": "Your API key has been successfully created."
     }
   },
+  "CreateLocaleDialog": {
+    "button": {
+      "createLocale": "Create Locale"
+    },
+    "dialog": {
+      "close": "Close",
+      "codeLabel": "Locale Code",
+      "codePlaceholder": "e.g. en_US",
+      "createLocale": "Create Locale",
+      "creatingLocale": "Creating Locale...",
+      "description": "Fill in the details below to create a new locale.",
+      "languageLabel": "Language",
+      "languagePlaceholder": "e.g. English",
+      "regionLabel": "Region (optional)",
+      "regionPlaceholder": "e.g. United States",
+      "title": "Create Locale"
+    },
+    "toast": {
+      "creationFailed": "Failed to create locale. Please try again.",
+      "creationSuccess": "The locale \"{displayName}\" ({code}) has been successfully created."
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to create new locales."
+    }
+  },
   "DataExportCard": {
     "button": {
       "exportData": "Request Data Export",
@@ -113,7 +212,7 @@
   },
   "DeleteAccountCard": {
     "button": {
-      "delete": "Delete Account"
+      "deleteAccount": "Delete Account"
     },
     "card": {
       "description": "Once you delete your account, there is no going back. Deleting your account will remove all attached data, including projects, from our system. Please be certain.",
@@ -129,6 +228,31 @@
     "toast": {
       "accountDeleted": "Your account has been successfully deleted.",
       "deleteFailed": "Failed to delete your account. Please try again."
+    }
+  },
+  "ImportLocalesDialog": {
+    "alert": {
+      "manyLocalesDescription": "You are about to import a large number of locales ({count}). This may take a few seconds and could impact system performance temporarily.",
+      "manyLocalesTitle": "Importing Many Locales"
+    },
+    "button": {
+      "importLocales": "Import Locales"
+    },
+    "dialog": {
+      "close": "Close",
+      "description": "Select which locales you want to import into your system.",
+      "deselectAll": "Deselect All ({count})",
+      "importingLocales": "Importing Locales...",
+      "importLocales": "Import Locales ({count})",
+      "selectAll": "Select All ({count})",
+      "title": "Import Locales"
+    },
+    "toast": {
+      "importFailed": "Failed to import locales. Please try again.",
+      "importSuccess": "Imported {total} locales ({created} created, {updated} updated)."
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to create new locales."
     }
   },
   "ProfileDetailsCard": {
