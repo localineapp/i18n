@@ -12,12 +12,14 @@
     "title": "Locales"
   },
   "AdminLocalesTable": {
-    "deleteDialog": {
+    "dialog": {
       "cancel": "Cancel",
-      "deleteLocale": "Delete Locale",
-      "deletingLocale": "Deleting locale...",
-      "description": "This action cannot be undone. This will permanently delete the locale \"{displayName}\" ({id}) and all associated translations in all projects. Please be certain.",
-      "title": "Are you absolutely sure?"
+      "deleteLocale": {
+        "deleteLocale": "Delete Locale",
+        "deletingLocale": "Deleting locale...",
+        "description": "This action cannot be undone. This will permanently delete the locale \"{displayName}\" ({id}) and all associated translations in all projects. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
     },
     "empty": {
       "description": "There have been no locales created yet. Click the button below to create your first locale.",
@@ -73,6 +75,122 @@
       "noPermissionUpdate": "You don't have permission to update locales."
     }
   },
+  "AdminPlansPage": {
+    "description": "View and manage all plans in the system.",
+    "title": "Plans"
+  },
+  "AdminPlansTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "deletePlan": {
+        "deletePlan": "Delete Plan",
+        "deletingPlan": "Deleting Plan...",
+        "description": "This action cannot be undone. This will permanently delete the plan \"{displayName}\" ({id}) and remove the association with this plan from all projects that are currently using it. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "empty": {
+      "description": "There have been no plans created yet. Click the button below to create your first plan.",
+      "title": "No Plans Yet"
+    },
+    "input": {
+      "searchPlaceholder": "Search plans by name, description or ID..."
+    },
+    "noDefaultPlanAlert": {
+      "description": "There is currently no default plan set. This means that new projects can't be created because every project must be associated with a plan.",
+      "title": "No Default Plan Set"
+    },
+    "sheet": {
+      "close": "Close",
+      "description": "Update the details of the plan. Changes to the plan will be reflected in all projects that are associated with this plan.",
+      "descriptionLabel": "Description (optional)",
+      "descriptionPlaceholder": "Enter a description for the plan (optional)",
+      "displayNameLabel": "Display Name",
+      "displayNamePlaceholder": "Enter a display name for the plan",
+      "labelsLimitLabel": "Labels Limit (Empty for unlimited)",
+      "labelsLimitPlaceholder": "Enter a labels limit for the plan",
+      "localesLimitLabel": "Locales Limit (Empty for unlimited)",
+      "localesLimitPlaceholder": "Enter a locales limit for the plan",
+      "membersLimitLabel": "Members Limit (Empty for unlimited)",
+      "membersLimitPlaceholder": "Enter a members limit for the plan",
+      "termsLimitLabel": "Terms Limit (Empty for unlimited)",
+      "termsLimitPlaceholder": "Enter a terms limit for the plan",
+      "title": "Edit {displayName} ({id})",
+      "updatePlan": "Update Plan",
+      "updatingPlan": "Updating Plan..."
+    },
+    "table": {
+      "noPlansFound": "No plans found matching \"{query}\".",
+      "noPlansFoundGeneric": "No plans found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "default": "Default",
+      "defaultHover": "The default plan is automatically associated with new projects that are created without a specified plan.",
+      "description": "Description",
+      "displayName": "Display Name",
+      "id": "ID",
+      "labelsLimit": "Labels",
+      "localesLimit": "Locales",
+      "membersLimit": "Members",
+      "termsLimit": "Terms"
+    },
+    "toast": {
+      "alreadyDefault": "The plan \"{displayName}\" ({id}) is already set as the default plan.",
+      "deleteFailed": "Failed to delete plan. Please try again.",
+      "deleteSuccess": "The plan \"{displayName}\" ({id}) has been successfully deleted.",
+      "setDefaultFailed": "Failed to set default plan. Please try again.",
+      "setDefaultSuccess": "The plan \"{displayName}\" ({id}) has been successfully set successfully set as the default plan.",
+      "updateFailed": "Failed to update plan. Please try again.",
+      "updateSuccess": "The plan \"{displayName}\" ({id}) has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDelete": "You don't have permission to delete plans.",
+      "noPermissionUpdate": "You don't have permission to update plans."
+    },
+    "unlimited": "∞"
+  },
+  "AdminProjectsPage": {
+    "description": "View and manage all projects in the system.",
+    "title": "Projects"
+  },
+  "AdminProjectsTable": {
+    "dialog": {
+      "close": "Close",
+      "updatePlan": {
+        "description": "Select a new plan for this project. Changes to the project plan may affect the features and limits available to this project, depending on the differences between the old and new plans.",
+        "title": "Update Plan for {projectName} ({projectId})",
+        "updatePlan": "Update Project Plan",
+        "updatingPlan": "Updating Project Plan..."
+      }
+    },
+    "empty": {
+      "description": "There have been no projects created yet.",
+      "title": "No Projects Yet"
+    },
+    "input": {
+      "searchPlaceholder": "Search projects by name or ID..."
+    },
+    "noOwner": "No owner information",
+    "table": {
+      "noProjectsFound": "No projects found matching \"{query}\".",
+      "noProjectsFoundGeneric": "No projects found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "description": "Description",
+      "id": "ID",
+      "name": "Name",
+      "owner": "Owner"
+    },
+    "toast": {
+      "updatePlanFailed": "Failed to update project plan. Please try again.",
+      "updatePlanSuccess": "The plan of the project \"{projectName}\" ({projectId}) has been successfully updated to \"{planName}\"."
+    },
+    "tooltip": {
+      "noPermissionUpdatePlan": "You don't have permission to update project plans."
+    }
+  },
   "ApiKeysPage": {
     "description": "Manage your API keys and view their details.",
     "title": "API Keys"
@@ -80,10 +198,12 @@
   "ApiKeysTable": {
     "dialog": {
       "cancel": "Cancel",
-      "deleteApiKey": "Delete API Key",
-      "deleteDescription": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
-      "deleteTitle": "Delete API Key",
-      "deletingApiKey": "Deleting API Key..."
+      "deleteApiKey": {
+        "deleteApiKey": "Delete API Key",
+        "deletingApiKey": "Deleting API Key...",
+        "description": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
+        "title": "Delete API Key"
+      }
     },
     "empty": {
       "description": "You haven't created any API keys yet. Click the button below to create your first API key.",
@@ -197,6 +317,29 @@
       "noPermission": "You don't have permission to create new locales."
     }
   },
+  "CreatePlanDialog": {
+    "button": {
+      "createPlan": "Create Plan"
+    },
+    "dialog": {
+      "close": "Close",
+      "createPlan": "Create Plan",
+      "creatingPlan": "Creating Plan...",
+      "description": "Add a new plan to the system.",
+      "planDescriptionLabel": "Description (optional)",
+      "planDescriptionPlaceholder": "Enter a description for the plan",
+      "planNameLabel": "Plan Name",
+      "planNamePlaceholder": "Enter a name for the plan",
+      "title": "Create New Plan"
+    },
+    "toast": {
+      "creationFailed": "Failed to create plan. Please try again.",
+      "creationSuccess": "The plan \"{displayName}\" has been successfully created."
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to create new plans."
+    }
+  },
   "DataExportCard": {
     "button": {
       "exportData": "Request Data Export",
@@ -253,6 +396,36 @@
     },
     "tooltip": {
       "noPermission": "You don't have permission to create new locales."
+    }
+  },
+  "PlanPresetsDialog": {
+    "button": {
+      "importPresets": "Presets"
+    },
+    "dialog": {
+      "card": {
+        "alreadyImported": "Already Imported",
+        "labelsLimit": "Labels Limit:",
+        "localesLimit": "Locales Limit:",
+        "membersLimit": "Members Limit:",
+        "noDescription": "No description available for this plan.",
+        "planSelected": "Selected",
+        "termsLimit": "Terms Limit:",
+        "unlimited": "Unlimited"
+      },
+      "close": "Close",
+      "description": "Select which plan presets you want to import into your system.",
+      "importingPlans": "Importing Presets...",
+      "importPlans": "Import Presets ({count})",
+      "title": "Plan Presets"
+    },
+    "toast": {
+      "importFailed": "Failed to import plan presets. Please try again.",
+      "importSuccess": "Imported {count} plan presets successfully. ({created} created, {updated} updated)"
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to create new plans.",
+      "noPresets": "There are no available plan presets to import."
     }
   },
   "ProfileDetailsCard": {
