@@ -11,6 +11,93 @@
     "description": "View and manage all locales in the system.",
     "title": "Locales"
   },
+  "AdminUsersPage": {
+    "description": "View and manage all users in the system.",
+    "title": "Users"
+  },
+  "AdminUsersTable": {
+    "input": {
+      "searchPlaceholder": "Search users by name, email or ID..."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "email": "Email",
+      "id": "ID",
+      "name": "Name",
+      "banned": "Banned",
+      "role": "Role"
+    },
+    "you": "You",
+    "table": {
+      "noUsersFound": "No users found matching \"{query}\".",
+      "noUsersFoundGeneric": "No users found."
+    },
+    "sheet": {
+      "editUser": {
+        "title": "Edit {name} ({id})",
+        "description": "Update the details of the user, including their role and banned status. Changes to the user's role may affect their permissions and access to certain features in the system.",
+        "nameLabel": "Name",
+        "namePlaceholder": "Enter a name for the user",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Enter an email for the user",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Leave blank to keep the current password",
+        "emailVerifiedLabel": "Email Verified",
+        "emailVerifiedYes": "Yes",
+        "emailVerifiedNo": "No",
+        "roleLabel": "Role",
+        "roleUser": "User",
+        "roleAdmin": "Admin",
+        "bannedLabel": "Banned",
+        "bannedYes": "Yes",
+        "bannedNo": "No",
+        "banReasonLabel": "Ban Reason",
+        "banReasonPlaceholder": "Enter a reason for the ban",
+        "banExpiresLabel": "Ban Expires",
+        "banExpiresPlaceholder": "Enter the date when the ban expires",
+        "projectsLimitLabel": "Projects Limit",
+        "projectsLimitPlaceholder": "Enter a projects limit for the user",
+        "updateUser": "Update User",
+        "updatingUser": "Updating user..."
+      },
+      "close": "Close"
+    },
+    "toast": {
+      "impersonationFailed": "Failed to impersonate user. Please try again.",
+      "impersonationSuccess": "You are now impersonating {name} ({id}). To stop impersonating, please log out and log back in to your account.",
+      "deleteFailed": "Failed to delete user. Please try again.",
+      "deleteSuccess": "The user \"{name}\" ({id}) has been successfully deleted.",
+      "nameAndEmailRequired": "Name and email are required fields. Please fill them in and try again.",
+      "projectsLimitInvalid": "Projects limit must be a positive integer. Please enter a valid number and try again.",
+      "projectsLimitEmpty": "Projects limit cannot be empty. Please enter a valid number and try again.",
+      "banExpiresInvalid": "Ban expires must be a valid date in the future. Please enter a valid date and try again.",
+      "banExpiresFuture": "Ban expires must be a date in the future. Please enter a valid date and try again.",
+      "noChanges": "No changes were made to the user.",
+      "updateGenericFailed": "Failed to update user. Please try again.",
+      "updateRoleFailed": "Failed to update user role. Please try again.",
+      "updatePasswordFailed": "Failed to update user password. Please try again.",
+      "updateBanFailed": "Failed to update user ban status. Please try again.",
+      "updateSuccess": "The user \"{name}\" ({id}) has been successfully updated."
+    },
+    "alert": {
+      "editingSelfTitle": "Editing Your Own Account",
+      "editingSelfDescription": "You are currently editing your own account. Be cautious when making changes to your own role or banned status, as it may affect your access to the system. If you accidentally remove your own admin privileges or ban yourself, you may lose access to the admin dashboard and will need to contact another administrator to restore your access."
+    },
+    "tooltip": {
+      "cannotImpersonateSelf": "You can't impersonate yourself.",
+      "cannotImpersonateBanned": "You can't impersonate a banned user.",
+      "cannotDeleteSelf": "You can't delete your own account."
+    },
+    "dialog": {
+      "deleteUser": {
+        "title": "Are you absolutely sure?",
+        "description": "This action cannot be undone. This will permanently delete the user \"{name}\" ({id}) and all associated data, including their projects. Please be certain.",
+        "deleteUser": "Delete User",
+        "deletingUser": "Deleting user..."
+      },
+      "cancel": "Cancel"
+    }
+  },
   "AdminLocalesTable": {
     "dialog": {
       "cancel": "Cancel",
@@ -32,22 +119,24 @@
     "none": "None",
     "sheet": {
       "close": "Close",
-      "codeLabel": "Locale Code",
-      "codePlaceholder": "en_US",
-      "description": "Update the details of the locale. Changes to the locale will be reflected in all projects that use this locale.",
-      "displayNameLabel": "Display Name",
-      "displayNamePlaceholder": "English (United States)",
-      "enabledLabel": "Enabled",
-      "enabledNo": "No",
-      "enabledYes": "Yes",
-      "flagLabel": "Flag (optional)",
-      "languageLabel": "Language",
-      "languagePlaceholder": "English",
-      "regionLabel": "Region (optional)",
-      "regionPlaceholder": "United States",
-      "title": "Edit {displayName} ({id})",
-      "updateLocale": "Update Locale",
-      "updatingLocale": "Updating locale..."
+      "editLocale": {
+        "codeLabel": "Locale Code",
+        "codePlaceholder": "en_US",
+        "description": "Update the details of the locale. Changes to the locale will be reflected in all projects that use this locale.",
+        "displayNameLabel": "Display Name",
+        "displayNamePlaceholder": "English (United States)",
+        "enabledLabel": "Enabled",
+        "enabledNo": "No",
+        "enabledYes": "Yes",
+        "flagLabel": "Flag (optional)",
+        "languageLabel": "Language",
+        "languagePlaceholder": "English",
+        "regionLabel": "Region (optional)",
+        "regionPlaceholder": "United States",
+        "title": "Edit {displayName} ({id})",
+        "updateLocale": "Update Locale",
+        "updatingLocale": "Updating locale..."
+      }
     },
     "table": {
       "noLocalesFound": "No locales found matching \"{query}\".",
@@ -84,7 +173,7 @@
       "cancel": "Cancel",
       "deletePlan": {
         "deletePlan": "Delete Plan",
-        "deletingPlan": "Deleting Plan...",
+        "deletingPlan": "Deleting plan...",
         "description": "This action cannot be undone. This will permanently delete the plan \"{displayName}\" ({id}) and remove the association with this plan from all projects that are currently using it. Please be certain.",
         "title": "Are you absolutely sure?"
       }
@@ -102,22 +191,24 @@
     },
     "sheet": {
       "close": "Close",
-      "description": "Update the details of the plan. Changes to the plan will be reflected in all projects that are associated with this plan.",
-      "descriptionLabel": "Description (optional)",
-      "descriptionPlaceholder": "Enter a description for the plan (optional)",
-      "displayNameLabel": "Display Name",
-      "displayNamePlaceholder": "Enter a display name for the plan",
-      "labelsLimitLabel": "Labels Limit (Empty for unlimited)",
-      "labelsLimitPlaceholder": "Enter a labels limit for the plan",
-      "localesLimitLabel": "Locales Limit (Empty for unlimited)",
-      "localesLimitPlaceholder": "Enter a locales limit for the plan",
-      "membersLimitLabel": "Members Limit (Empty for unlimited)",
-      "membersLimitPlaceholder": "Enter a members limit for the plan",
-      "termsLimitLabel": "Terms Limit (Empty for unlimited)",
-      "termsLimitPlaceholder": "Enter a terms limit for the plan",
-      "title": "Edit {displayName} ({id})",
-      "updatePlan": "Update Plan",
-      "updatingPlan": "Updating Plan..."
+      "editPlan": {
+        "description": "Update the details of the plan. Changes to the plan will be reflected in all projects that are associated with this plan.",
+        "descriptionLabel": "Description (optional)",
+        "descriptionPlaceholder": "Enter a description for the plan (optional)",
+        "displayNameLabel": "Display Name",
+        "displayNamePlaceholder": "Enter a display name for the plan",
+        "labelsLimitLabel": "Labels Limit (Empty for unlimited)",
+        "labelsLimitPlaceholder": "Enter a labels limit for the plan",
+        "localesLimitLabel": "Locales Limit (Empty for unlimited)",
+        "localesLimitPlaceholder": "Enter a locales limit for the plan",
+        "membersLimitLabel": "Members Limit (Empty for unlimited)",
+        "membersLimitPlaceholder": "Enter a members limit for the plan",
+        "termsLimitLabel": "Terms Limit (Empty for unlimited)",
+        "termsLimitPlaceholder": "Enter a terms limit for the plan",
+        "title": "Edit {displayName} ({id})",
+        "updatePlan": "Update Plan",
+        "updatingPlan": "Updating plan..."
+      }
     },
     "table": {
       "noPlansFound": "No plans found matching \"{query}\".",
@@ -140,7 +231,7 @@
       "deleteFailed": "Failed to delete plan. Please try again.",
       "deleteSuccess": "The plan \"{displayName}\" ({id}) has been successfully deleted.",
       "setDefaultFailed": "Failed to set default plan. Please try again.",
-      "setDefaultSuccess": "The plan \"{displayName}\" ({id}) has been successfully set successfully set as the default plan.",
+      "setDefaultSuccess": "The plan \"{displayName}\" ({id}) has been successfully set as the default plan.",
       "updateFailed": "Failed to update plan. Please try again.",
       "updateSuccess": "The plan \"{displayName}\" ({id}) has been successfully updated."
     },
@@ -161,7 +252,7 @@
         "description": "Select a new plan for this project. Changes to the project plan may affect the features and limits available to this project, depending on the differences between the old and new plans.",
         "title": "Update Plan for {projectName} ({projectId})",
         "updatePlan": "Update Project Plan",
-        "updatingPlan": "Updating Project Plan..."
+        "updatingPlan": "Updating project plan..."
       }
     },
     "empty": {
@@ -200,7 +291,7 @@
       "cancel": "Cancel",
       "deleteApiKey": {
         "deleteApiKey": "Delete API Key",
-        "deletingApiKey": "Deleting API Key...",
+        "deletingApiKey": "Deleting API key...",
         "description": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
         "title": "Delete API Key"
       }
@@ -278,7 +369,7 @@
       "createApiKey": "Create API Key",
       "createDescription": "Fill in the details below to create a new API key.",
       "createTitle": "Create API Key",
-      "creatingApiKey": "Creating API Key...",
+      "creatingApiKey": "Creating API key...",
       "disableRateLimiting": "Disable Rate Limiting",
       "expiryDate": "Expiry Date",
       "successDescription": "Your new API key has been successfully created. Please copy and store it securely, as it will not be shown again.",
@@ -301,7 +392,7 @@
       "codeLabel": "Locale Code",
       "codePlaceholder": "e.g. en_US",
       "createLocale": "Create Locale",
-      "creatingLocale": "Creating Locale...",
+      "creatingLocale": "Creating locale...",
       "description": "Fill in the details below to create a new locale.",
       "languageLabel": "Language",
       "languagePlaceholder": "e.g. English",
@@ -324,7 +415,7 @@
     "dialog": {
       "close": "Close",
       "createPlan": "Create Plan",
-      "creatingPlan": "Creating Plan...",
+      "creatingPlan": "Creating plan...",
       "description": "Add a new plan to the system.",
       "planDescriptionLabel": "Description (optional)",
       "planDescriptionPlaceholder": "Enter a description for the plan",
@@ -364,7 +455,7 @@
     "dialog": {
       "cancel": "Cancel",
       "deleteAccount": "Delete Account",
-      "deletingAccount": "Deleting Account...",
+      "deletingAccount": "Deleting account...",
       "description": "This action cannot be undone. This will permanently delete your account and all attached data.",
       "title": "Are you absolutely sure?"
     },
@@ -385,7 +476,7 @@
       "close": "Close",
       "description": "Select which locales you want to import into your system.",
       "deselectAll": "Deselect All ({count})",
-      "importingLocales": "Importing Locales...",
+      "importingLocales": "Importing locales...",
       "importLocales": "Import Locales ({count})",
       "selectAll": "Select All ({count})",
       "title": "Import Locales"
@@ -415,7 +506,7 @@
       },
       "close": "Close",
       "description": "Select which plan presets you want to import into your system.",
-      "importingPlans": "Importing Presets...",
+      "importingPlans": "Importing presets...",
       "importPlans": "Import Presets ({count})",
       "title": "Plan Presets"
     },
