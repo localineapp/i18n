@@ -11,93 +11,6 @@
     "description": "View and manage all locales in the system.",
     "title": "Locales"
   },
-  "AdminUsersPage": {
-    "description": "View and manage all users in the system.",
-    "title": "Users"
-  },
-  "AdminUsersTable": {
-    "input": {
-      "searchPlaceholder": "Search users by name, email or ID..."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "email": "Email",
-      "id": "ID",
-      "name": "Name",
-      "banned": "Banned",
-      "role": "Role"
-    },
-    "you": "You",
-    "table": {
-      "noUsersFound": "No users found matching \"{query}\".",
-      "noUsersFoundGeneric": "No users found."
-    },
-    "sheet": {
-      "editUser": {
-        "title": "Edit {name} ({id})",
-        "description": "Update the details of the user, including their role and banned status. Changes to the user's role may affect their permissions and access to certain features in the system.",
-        "nameLabel": "Name",
-        "namePlaceholder": "Enter a name for the user",
-        "emailLabel": "Email",
-        "emailPlaceholder": "Enter an email for the user",
-        "passwordLabel": "Password",
-        "passwordPlaceholder": "Leave blank to keep the current password",
-        "emailVerifiedLabel": "Email Verified",
-        "emailVerifiedYes": "Yes",
-        "emailVerifiedNo": "No",
-        "roleLabel": "Role",
-        "roleUser": "User",
-        "roleAdmin": "Admin",
-        "bannedLabel": "Banned",
-        "bannedYes": "Yes",
-        "bannedNo": "No",
-        "banReasonLabel": "Ban Reason",
-        "banReasonPlaceholder": "Enter a reason for the ban",
-        "banExpiresLabel": "Ban Expires",
-        "banExpiresPlaceholder": "Enter the date when the ban expires",
-        "projectsLimitLabel": "Projects Limit",
-        "projectsLimitPlaceholder": "Enter a projects limit for the user",
-        "updateUser": "Update User",
-        "updatingUser": "Updating user..."
-      },
-      "close": "Close"
-    },
-    "toast": {
-      "impersonationFailed": "Failed to impersonate user. Please try again.",
-      "impersonationSuccess": "You are now impersonating {name} ({id}). To stop impersonating, please log out and log back in to your account.",
-      "deleteFailed": "Failed to delete user. Please try again.",
-      "deleteSuccess": "The user \"{name}\" ({id}) has been successfully deleted.",
-      "nameAndEmailRequired": "Name and email are required fields. Please fill them in and try again.",
-      "projectsLimitInvalid": "Projects limit must be a positive integer. Please enter a valid number and try again.",
-      "projectsLimitEmpty": "Projects limit cannot be empty. Please enter a valid number and try again.",
-      "banExpiresInvalid": "Ban expires must be a valid date in the future. Please enter a valid date and try again.",
-      "banExpiresFuture": "Ban expires must be a date in the future. Please enter a valid date and try again.",
-      "noChanges": "No changes were made to the user.",
-      "updateGenericFailed": "Failed to update user. Please try again.",
-      "updateRoleFailed": "Failed to update user role. Please try again.",
-      "updatePasswordFailed": "Failed to update user password. Please try again.",
-      "updateBanFailed": "Failed to update user ban status. Please try again.",
-      "updateSuccess": "The user \"{name}\" ({id}) has been successfully updated."
-    },
-    "alert": {
-      "editingSelfTitle": "Editing Your Own Account",
-      "editingSelfDescription": "You are currently editing your own account. Be cautious when making changes to your own role or banned status, as it may affect your access to the system. If you accidentally remove your own admin privileges or ban yourself, you may lose access to the admin dashboard and will need to contact another administrator to restore your access."
-    },
-    "tooltip": {
-      "cannotImpersonateSelf": "You can't impersonate yourself.",
-      "cannotImpersonateBanned": "You can't impersonate a banned user.",
-      "cannotDeleteSelf": "You can't delete your own account."
-    },
-    "dialog": {
-      "deleteUser": {
-        "title": "Are you absolutely sure?",
-        "description": "This action cannot be undone. This will permanently delete the user \"{name}\" ({id}) and all associated data, including their projects. Please be certain.",
-        "deleteUser": "Delete User",
-        "deletingUser": "Deleting user..."
-      },
-      "cancel": "Cancel"
-    }
-  },
   "AdminLocalesTable": {
     "dialog": {
       "cancel": "Cancel",
@@ -282,6 +195,93 @@
       "noPermissionUpdatePlan": "You don't have permission to update project plans."
     }
   },
+  "AdminUsersPage": {
+    "description": "View and manage all users in the system.",
+    "title": "Users"
+  },
+  "AdminUsersTable": {
+    "alert": {
+      "editingSelfDescription": "You are currently editing your own account. Be cautious when making changes to your own role or banned status, as it may affect your access to the system. If you accidentally remove your own admin privileges or ban yourself, you may lose access to the admin dashboard and will need to contact another administrator to restore your access.",
+      "editingSelfTitle": "Editing Your Own Account"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteUser": {
+        "deleteUser": "Delete User",
+        "deletingUser": "Deleting user...",
+        "description": "This action cannot be undone. This will permanently delete the user \"{name}\" ({id}) and all associated data, including their projects. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search users by name, email or ID..."
+    },
+    "sheet": {
+      "close": "Close",
+      "editUser": {
+        "banExpiresLabel": "Ban Expires",
+        "banExpiresPlaceholder": "Enter the date when the ban expires",
+        "bannedLabel": "Banned",
+        "bannedNo": "No",
+        "bannedYes": "Yes",
+        "banReasonLabel": "Ban Reason",
+        "banReasonPlaceholder": "Enter a reason for the ban",
+        "description": "Update the details of the user, including their role and banned status. Changes to the user's role may affect their permissions and access to certain features in the system.",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Enter an email for the user",
+        "emailVerifiedLabel": "Email Verified",
+        "emailVerifiedNo": "No",
+        "emailVerifiedYes": "Yes",
+        "nameLabel": "Name",
+        "namePlaceholder": "Enter a name for the user",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Leave blank to keep the current password",
+        "projectsLimitLabel": "Projects Limit",
+        "projectsLimitPlaceholder": "Enter a projects limit for the user",
+        "roleAdmin": "Admin",
+        "roleLabel": "Role",
+        "roleUser": "User",
+        "title": "Edit {name} ({id})",
+        "updateUser": "Update User",
+        "updatingUser": "Updating user..."
+      }
+    },
+    "table": {
+      "noUsersFound": "No users found matching \"{query}\".",
+      "noUsersFoundGeneric": "No users found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "banned": "Banned",
+      "email": "Email",
+      "id": "ID",
+      "name": "Name",
+      "role": "Role"
+    },
+    "toast": {
+      "banExpiresFuture": "Ban expires must be a date in the future. Please enter a valid date and try again.",
+      "banExpiresInvalid": "Ban expires must be a valid date in the future. Please enter a valid date and try again.",
+      "deleteFailed": "Failed to delete user. Please try again.",
+      "deleteSuccess": "The user \"{name}\" ({id}) has been successfully deleted.",
+      "impersonationFailed": "Failed to impersonate user. Please try again.",
+      "impersonationSuccess": "You are now impersonating {name} ({id}). To stop impersonating, please log out and log back in to your account.",
+      "nameAndEmailRequired": "Name and email are required fields. Please fill them in and try again.",
+      "noChanges": "No changes were made to the user.",
+      "projectsLimitEmpty": "Projects limit cannot be empty. Please enter a valid number and try again.",
+      "projectsLimitInvalid": "Projects limit must be a positive integer. Please enter a valid number and try again.",
+      "updateBanFailed": "Failed to update user ban status. Please try again.",
+      "updateGenericFailed": "Failed to update user. Please try again.",
+      "updatePasswordFailed": "Failed to update user password. Please try again.",
+      "updateRoleFailed": "Failed to update user role. Please try again.",
+      "updateSuccess": "The user \"{name}\" ({id}) has been successfully updated."
+    },
+    "tooltip": {
+      "cannotDeleteSelf": "You can't delete your own account.",
+      "cannotImpersonateBanned": "You can't impersonate a banned user.",
+      "cannotImpersonateSelf": "You can't impersonate yourself."
+    },
+    "you": "You"
+  },
   "ApiKeysPage": {
     "description": "Manage your API keys and view their details.",
     "title": "API Keys"
@@ -324,6 +324,37 @@
       "apiKeyDisabled": "The API key has been successfully disabled.",
       "apiKeyEnabled": "The API key has been successfully enabled.",
       "apiKeyToggleFailed": "Failed to update API key status. Please try again."
+    }
+  },
+  "AppHeader": {
+    "dropdown": {
+      "accountLabel": "Your Account",
+      "signingOut": "Signing out...",
+      "signOut": "Sign Out",
+      "stopImpersonation": "Stop Impersonation",
+      "stoppingImpersonation": "Stopping impersonation..."
+    },
+    "input": {
+      "noProjectsFound": "No projects found matching \"{query}\".",
+      "searchPlaceholder": "Search projects by name or ID..."
+    },
+    "toast": {
+      "signOutFailed": "Failed to sign out. Please try again.",
+      "signOutSuccess": "You have been signed out successfully.",
+      "stopImpersonationFailed": "Failed to stop impersonating user. Please try again.",
+      "stopImpersonationSuccess": "You have stopped impersonating the user and returned to your account."
+    }
+  },
+  "AppSidebar": {
+    "sidebar": {
+      "accountLabel": "Your Account",
+      "administrationLabel": "Administration",
+      "invitations": "Invitations",
+      "projectSettings": "Settings"
+    },
+    "tooltip": {
+      "administration": "{name} (Admin)",
+      "invitations": "Invitations ({count})"
     }
   },
   "ConnectionsCard": {
@@ -430,6 +461,46 @@
     "tooltip": {
       "noPermission": "You don't have permission to create new plans."
     }
+  },
+  "DashboardAlerts": {
+    "emailVerification": {
+      "description": "Please verify your email address to access all features. Check your inbox for the verification email and follow the instructions to verify your account. If you haven't received the email, please check your spam folder or contact your administrator.",
+      "title": "Email Verification Required"
+    },
+    "updateAvailable": {
+      "description": "A newer release is available: {latestRelease} - you are currently on version {currentVersion}. Please update to the latest version to access new features, improvements and bug fixes.",
+      "title": "Update Available"
+    }
+  },
+  "DashboardCards": {
+    "changelogDialog": {
+      "button": {
+        "showChangelog": "Show Changelog"
+      },
+      "title": "Changelog of {version}"
+    },
+    "documentation": {
+      "content": "Visit the documentation to find configuration & troubleshooting guides and other resources to help you get started and make the most out of Localine.",
+      "description": "Read the documentation to find useful guides.",
+      "title": "Documentation",
+      "visitButton": "View Documentation"
+    },
+    "github": {
+      "content": "Visit the GitHub repository to explore the source code, open issues, contribute changes, and stay up to date with new releases.",
+      "description": "Browse the source code, releases and contribute to the project.",
+      "title": "GitHub",
+      "visitButton": "Open on GitHub"
+    },
+    "version": {
+      "description": "You are currently running version",
+      "title": "Version",
+      "updateButton": "Update",
+      "updateDescription": "New version is available: {latestRelease}"
+    }
+  },
+  "DashboardPage": {
+    "description": "Look forward to the latest features and improvements of Localine.",
+    "title": "Dashboard"
   },
   "DataExportCard": {
     "button": {
@@ -712,6 +783,21 @@
     },
     "tooltip": {
       "cannotRevokeCurrentSession": "You can't revoke the current session from here. To revoke this session, please use the \"Revoke All Sessions\" option above."
+    }
+  },
+  "TablePagination": {
+    "button": {
+      "next": "Next",
+      "previous": "Previous"
+    },
+    "page": "Page {currentPage} of {totalPages}",
+    "showingResults": "Showing {from}-{to} of {total} results"
+  },
+  "ThemeModeSelector": {
+    "theme": {
+      "dark": "Dark",
+      "light": "Light",
+      "system": "System"
     }
   }
 }
