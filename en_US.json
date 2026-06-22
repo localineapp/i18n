@@ -326,6 +326,15 @@
       "apiKeyToggleFailed": "Failed to update API key status. Please try again."
     }
   },
+  "ApiPage": {
+    "button": {
+      "deprecated": "deprecated",
+      "v1": "API v1",
+      "v2": "API v2"
+    },
+    "description": "Browse the API documentation for Localine.",
+    "title": "Localine API"
+  },
   "AppHeader": {
     "dropdown": {
       "accountLabel": "Your Account",
@@ -560,6 +569,15 @@
       "noPermission": "You don't have permission to create new locales."
     }
   },
+  "NotFoundPage": {
+    "button": {
+      "goToDashboard": "Go back to dashboard",
+      "signIn": "Sign into your account"
+    },
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "subtitle": "Page Not Found",
+    "title": "404"
+  },
   "PlanPresetsDialog": {
     "button": {
       "importPresets": "Presets"
@@ -660,6 +678,13 @@
       "copyFailed": "Failed to copy user ID. Please try again.",
       "copyToClipboard": "User ID copied to clipboard."
     }
+  },
+  "ProjectNotFoundPage": {
+    "button": {
+      "goToDashboard": "Go back to dashboard"
+    },
+    "description": "The project you are looking for does not exist.",
+    "title": "Project Not Found"
   },
   "PublicProfilePage": {
     "description": "View and manage your public profile information.",
@@ -798,6 +823,20 @@
       "dark": "Dark",
       "light": "Light",
       "system": "System"
+    }
+  },
+  "ToggleAdminButton": {
+    "button": {
+      "grantAdmin": "Grant Admin Access",
+      "revokeAdmin": "Revoke Admin Access"
+    },
+    "toast": {
+      "grantSuccess": "Your admin access has been successfully granted.",
+      "revokeSuccess": "Your admin access has been successfully revoked.",
+      "updateFailed": "Failed to update admin access. Please try again."
+    },
+    "tooltip": {
+      "warning": "If you see this button in your production environment, you are probably running your instance in development mode. Use 'npm run start' or set your NODE_ENV to production to avoid security risks."
     }
   }
 }
