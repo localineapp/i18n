@@ -471,6 +471,33 @@
       "noPermission": "You don't have permission to create new plans."
     }
   },
+  "CreateProjectDialog": {
+    "button": {
+      "createProject": "Create Project"
+    },
+    "dialog": {
+      "close": "Close",
+      "createProject": {
+        "createProject": "Create Project",
+        "creatingProject": "Creating project...",
+        "description": "Fill in the details below to create a new project. You can always update these details later in the project settings.",
+        "descriptionLabel": "Description (optional)",
+        "descriptionPlaceholder": "Enter a description for your project",
+        "nameLabel": "Project Name",
+        "namePlaceholder": "Enter a name for your project",
+        "title": "Create New Project"
+      }
+    },
+    "toast": {
+      "creationFailed": "Failed to create project. Please try again.",
+      "creationSuccess": "The project \"{projectName}\" has been successfully created."
+    },
+    "tooltip": {
+      "limitExceeded": "You have reached the maximum number of projects allowed for your account. ({current}/{limit})",
+      "limitZero": "Your account is not allowed to create projects. Please contact your administrator for more information.",
+      "noDefaultPlan": "No default plan is set. Please contact your administrator to set a default plan before creating projects."
+    }
+  },
   "DashboardAlerts": {
     "emailVerification": {
       "description": "Please verify your email address to access all features. Check your inbox for the verification email and follow the instructions to verify your account. If you haven't received the email, please check your spam folder or contact your administrator.",
@@ -567,6 +594,77 @@
     },
     "tooltip": {
       "noPermission": "You don't have permission to create new locales."
+    }
+  },
+  "InvitationInformation": {
+    "button": {
+      "accept": "Accept Invitation",
+      "decline": "Decline Invitation"
+    },
+    "card": {
+      "content": {
+        "aside": {
+          "ExpiresOn": "Expires on:",
+          "invitedOn": "Invited on:",
+          "projectName": "Project Name:",
+          "role": "Your Role:",
+          "title": "Invitation Details"
+        },
+        "description": "Description",
+        "noDescription": "This project doesn't have a description yet."
+      },
+      "header": {
+        "invitedOn": "Invited:",
+        "projectId": "Project ID:",
+        "title": "Invitation to {projectName}"
+      }
+    },
+    "toast": {
+      "acceptFailed": "Failed to accept invitation. Please try again.",
+      "acceptSuccess": "You have successfully accepted the invitation and joined the project \"{projectName}\".",
+      "declineFailed": "Failed to decline invitation. Please try again.",
+      "declineSuccess": "You have successfully declined the invitation to join the project \"{projectName}\"."
+    }
+  },
+  "InvitationPage": {
+    "description": "You have received an invitation to join the project \"{projectName}\" with the role of {role}. Please accept or decline the invitation.",
+    "empty": {
+      "button": {
+        "goToDashboard": "Go back to dashboard"
+      },
+      "expired": {
+        "description": "This invitation has expired and can no longer be accepted.",
+        "title": "Invitation Expired"
+      },
+      "notFound": {
+        "description": "The invitation you are looking for does not exist.",
+        "title": "Invitation Not Found"
+      }
+    },
+    "metadata": {
+      "notFoundTitle": "Invitation Not Found",
+      "title": "{projectName}"
+    },
+    "title": "You have been invited to join {projectName}"
+  },
+  "InvitationsPage": {
+    "description": "View your pending invitations to join projects and accept or decline them.",
+    "title": "Invitations"
+  },
+  "InvitationsTable": {
+    "input": {
+      "searchPlaceholder": "Search invitations by project name or ID..."
+    },
+    "table": {
+      "noInvitationsFound": "No invitations found matching \"{query}\".",
+      "noInvitationsFoundGeneric": "No invitations found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "expiresAt": "Expires At",
+      "id": "ID",
+      "projectName": "Project Name",
+      "role": "Role"
     }
   },
   "NotFoundPage": {
@@ -685,6 +783,35 @@
     },
     "description": "The project you are looking for does not exist.",
     "title": "Project Not Found"
+  },
+  "ProjectsList": {
+    "cards": {
+      "id": "ID: {projectId}",
+      "noDescription": "No description provided for this project."
+    },
+    "empty": {
+      "description": "You haven't created or joined any projects yet. Click the button below to create your first project.",
+      "title": "No Projects Yet"
+    },
+    "table": {
+      "noDescription": "None",
+      "tableHeader": {
+        "actions": "Actions",
+        "description": "Description",
+        "id": "ID",
+        "name": "Name",
+        "plan": "Plan",
+        "role": "Role"
+      }
+    },
+    "toggleGroup": {
+      "cardView": "Cards",
+      "tableView": "Table"
+    }
+  },
+  "ProjectsPage": {
+    "description": "Select a project you're a part of, or create a new one to get started.",
+    "title": "Projects"
   },
   "PublicProfilePage": {
     "description": "View and manage your public profile information.",
