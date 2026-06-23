@@ -571,6 +571,27 @@
       "deleteFailed": "Failed to delete your account. Please try again."
     }
   },
+  "FirstStepsCards": {
+    "button": {
+      "open": "Open"
+    },
+    "locales": {
+      "description": "Add the locales you want to support in your project.",
+      "title": "Add Locales"
+    },
+    "members": {
+      "description": "Invite members to collaborate on your project and manage translations together.",
+      "title": "Add Members"
+    },
+    "terms": {
+      "description": "Add the terms you want to translate in your project.",
+      "title": "Add Terms"
+    },
+    "translations": {
+      "description": "Add translations for your terms in the locales you have added.",
+      "title": "Add Translations"
+    }
+  },
   "ImportLocalesDialog": {
     "alert": {
       "manyLocalesDescription": "You are about to import a large number of locales ({count}). This may take a few seconds and could impact system performance temporarily.",
@@ -665,6 +686,21 @@
       "id": "ID",
       "projectName": "Project Name",
       "role": "Role"
+    }
+  },
+  "MemberInfoCards": {
+    "joinedAt": {
+      "noMember": "You are not a member of this project. (Admin view)",
+      "title": "Joined At"
+    },
+    "locales": {
+      "noLocales": "You don't have any locales assigned to you in this project.",
+      "noMember": "You don't have any locales assigned to you in this project. (Admin view)",
+      "title": "Assigned Locales"
+    },
+    "role": {
+      "noMember": "You don't have a role in this project. (Admin view)",
+      "title": "Your Role"
     }
   },
   "NotFoundPage": {
@@ -777,12 +813,25 @@
       "copyToClipboard": "User ID copied to clipboard."
     }
   },
+  "ProjectLayout": {
+    "notFoundTitle": "Project Not Found"
+  },
+  "ProjectNavigation": {
+    "invalidProject": "Invalid Project",
+    "noDescription": "No description."
+  },
   "ProjectNotFoundPage": {
     "button": {
       "goToDashboard": "Go back to dashboard"
     },
     "description": "The project you are looking for does not exist.",
     "title": "Project Not Found"
+  },
+  "ProjectPage": {
+    "title": {
+      "firstSteps": "First Steps",
+      "yourMembership": "Your Membership"
+    }
   },
   "ProjectsList": {
     "cards": {
@@ -935,6 +984,29 @@
     },
     "tooltip": {
       "cannotRevokeCurrentSession": "You can't revoke the current session from here. To revoke this session, please use the \"Revoke All Sessions\" option above."
+    }
+  },
+  "StatisticCards": {
+    "limitReached": "Limit Reached",
+    "locales": {
+      "description": "locales have been added to this project.",
+      "noLocales": "No locales yet",
+      "title": "Locales"
+    },
+    "member": {
+      "description": "{members, plural, =0 {members are} =1 {member is} other {members are}} contributing to this project.",
+      "noMembers": "No members yet",
+      "title": "Members"
+    },
+    "progress": {
+      "content": "{translated} of {total} translations completed",
+      "noTranslations": "No translations yet",
+      "title": "Translation Progress"
+    },
+    "terms": {
+      "description": "terms have been added to this project.",
+      "noTerms": "No terms yet",
+      "title": "Terms"
     }
   },
   "TablePagination": {
