@@ -423,6 +423,31 @@
       "creationSuccess": "Your API key has been successfully created."
     }
   },
+  "CreateLabelDialog": {
+    "button": {
+      "createLabel": "Create Label"
+    },
+    "dialog": {
+      "close": "Close",
+      "createLabel": "Create Label",
+      "creatingLabel": "Creating label...",
+      "description": "Add a new label to your project. Labels can be used to categorize and organize your terms.",
+      "descriptionLabel": "Description (optional)",
+      "descriptionPlaceholder": "Enter a description for the label",
+      "labelNameLabel": "Label Name",
+      "labelNamePlaceholder": "Enter a name for the label",
+      "title": "Create New Label"
+    },
+    "toast": {
+      "createFailed": "Failed to create label. Please try again.",
+      "createSuccess": "The label \"{labelName}\" has been successfully created."
+    },
+    "tooltip": {
+      "limitReached": "You have reached the maximum number of labels allowed for this project. ({current}/{limit})",
+      "limitZero": "The current plan of this project does not allow creating labels. Please contact your administrator for more information.",
+      "noPermission": "You don't have permission to create labels in this project."
+    }
+  },
   "CreateLocaleDialog": {
     "button": {
       "createLocale": "Create Locale"
@@ -592,6 +617,30 @@
       "title": "Add Translations"
     }
   },
+  "FlagPickerField": {
+    "button": {
+      "clearSelection": "Clear selection",
+      "none": "None"
+    },
+    "input": {
+      "searchPlaceholder": "Search flags by name or code..."
+    },
+    "noFlagsFound": "No flags found matching \"{query}\".",
+    "placeholder": "Select a flag",
+    "searchAmount": "{count} flags"
+  },
+  "IconPickerField": {
+    "button": {
+      "clearSelection": "Clear selection",
+      "none": "None"
+    },
+    "input": {
+      "searchPlaceholder": "Search icons by name..."
+    },
+    "noIconsFound": "No icons found matching \"{query}\".",
+    "placeholder": "Select a Lucide icon",
+    "searchAmount": "{count} icons"
+  },
   "ImportLocalesDialog": {
     "alert": {
       "manyLocalesDescription": "You are about to import a large number of locales ({count}). This may take a few seconds and could impact system performance temporarily.",
@@ -686,6 +735,61 @@
       "id": "ID",
       "projectName": "Project Name",
       "role": "Role"
+    }
+  },
+  "LabelsTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteLabel": {
+        "deleteLabel": "Delete Label",
+        "deletingLabel": "Deleting label...",
+        "description": "This action cannot be undone. This will permanently delete the label \"{labelName}\" ({labelId}) and remove the association with this label from all terms that are currently using it. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search labels by name or ID..."
+    },
+    "invalidIcon": "Invalid icon",
+    "noColor": "No color",
+    "noDescription": "No description",
+    "noIcon": "No icon",
+    "sheet": {
+      "close": "Close",
+      "editLabel": {
+        "colorLabel": "Color (optional)",
+        "description": "Update the details of the label. Changes to the label will be reflected in all terms that are associated with this label.",
+        "descriptionLabel": "Description (optional)",
+        "descriptionPlaceholder": "Enter a description for the label",
+        "iconLabel": "Icon (optional)",
+        "labelNameLabel": "Label Name",
+        "labelNamePlaceholder": "Enter a name for the label",
+        "title": "Edit {labelName} ({labelId})",
+        "updateLabel": "Update Label",
+        "updatingLabel": "Updating label..."
+      }
+    },
+    "table": {
+      "noLabelsFound": "No labels found matching \"{query}\".",
+      "noLabelsFoundGeneric": "No labels found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "color": "Color",
+      "description": "Description",
+      "icon": "Icon",
+      "id": "ID",
+      "name": "Name"
+    },
+    "toast": {
+      "deleteFailed": "Failed to delete label. Please try again.",
+      "deleteSuccess": "The label \"{labelName}\" ({labelId}) has been successfully deleted.",
+      "updateFailed": "Failed to update label. Please try again.",
+      "updateSuccess": "The label \"{labelName}\" ({labelId}) has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDelete": "You don't have permission to delete labels in this project.",
+      "noPermissionUpdate": "You don't have permission to update labels in this project."
     }
   },
   "MemberInfoCards": {
@@ -812,6 +916,10 @@
       "copyFailed": "Failed to copy user ID. Please try again.",
       "copyToClipboard": "User ID copied to clipboard."
     }
+  },
+  "ProjectLabelsPage": {
+    "description": "Manage the labels for your project.",
+    "title": "Labels"
   },
   "ProjectLayout": {
     "notFoundTitle": "Project Not Found"
