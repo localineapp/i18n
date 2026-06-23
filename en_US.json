@@ -625,7 +625,7 @@
     "card": {
       "content": {
         "aside": {
-          "ExpiresOn": "Expires on:",
+          "expiresOn": "Expires on:",
           "invitedOn": "Invited on:",
           "projectName": "Project Name:",
           "role": "Your Role:",
