@@ -7,6 +7,29 @@
     "description": "You do not have permission to access this resource. Please contact your administrator if you believe this is an mistake.",
     "title": "Access Denied"
   },
+  "AddLocaleDialog": {
+    "button": {
+      "addLocale": "Add Locale"
+    },
+    "dialog": {
+      "addingLocale": "Adding locale...",
+      "addLocale": "Add Locale",
+      "close": "Close",
+      "description": "Select a locale to add to your project. Once added, you can translate terms in this locale.",
+      "localeLabel": "Locale",
+      "title": "Add Locale"
+    },
+    "toast": {
+      "addFailed": "Failed to add locale. Please try again.",
+      "addSuccess": "The locale \"{locale}\" has been successfully added to the project.",
+      "noLocaleSelected": "Please select a locale to add."
+    },
+    "tooltip": {
+      "limitReached": "You have reached the maximum number of locales allowed for this project. ({current}/{limit})",
+      "limitZero": "The current plan of this project does not allow adding locales. Please contact your administrator for more information.",
+      "noPermission": "You don't have permission to add locales to this project."
+    }
+  },
   "AdminLocalesPage": {
     "description": "View and manage all locales in the system.",
     "title": "Locales"
@@ -737,61 +760,6 @@
       "role": "Role"
     }
   },
-  "LabelsTable": {
-    "dialog": {
-      "cancel": "Cancel",
-      "deleteLabel": {
-        "deleteLabel": "Delete Label",
-        "deletingLabel": "Deleting label...",
-        "description": "This action cannot be undone. This will permanently delete the label \"{labelName}\" ({labelId}) and remove the association with this label from all terms that are currently using it. Please be certain.",
-        "title": "Are you absolutely sure?"
-      }
-    },
-    "input": {
-      "searchPlaceholder": "Search labels by name or ID..."
-    },
-    "invalidIcon": "Invalid icon",
-    "noColor": "No color",
-    "noDescription": "No description",
-    "noIcon": "No icon",
-    "sheet": {
-      "close": "Close",
-      "editLabel": {
-        "colorLabel": "Color (optional)",
-        "description": "Update the details of the label. Changes to the label will be reflected in all terms that are associated with this label.",
-        "descriptionLabel": "Description (optional)",
-        "descriptionPlaceholder": "Enter a description for the label",
-        "iconLabel": "Icon (optional)",
-        "labelNameLabel": "Label Name",
-        "labelNamePlaceholder": "Enter a name for the label",
-        "title": "Edit {labelName} ({labelId})",
-        "updateLabel": "Update Label",
-        "updatingLabel": "Updating label..."
-      }
-    },
-    "table": {
-      "noLabelsFound": "No labels found matching \"{query}\".",
-      "noLabelsFoundGeneric": "No labels found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "color": "Color",
-      "description": "Description",
-      "icon": "Icon",
-      "id": "ID",
-      "name": "Name"
-    },
-    "toast": {
-      "deleteFailed": "Failed to delete label. Please try again.",
-      "deleteSuccess": "The label \"{labelName}\" ({labelId}) has been successfully deleted.",
-      "updateFailed": "Failed to update label. Please try again.",
-      "updateSuccess": "The label \"{labelName}\" ({labelId}) has been successfully updated."
-    },
-    "tooltip": {
-      "noPermissionDelete": "You don't have permission to delete labels in this project.",
-      "noPermissionUpdate": "You don't have permission to update labels in this project."
-    }
-  },
   "MemberInfoCards": {
     "joinedAt": {
       "noMember": "You are not a member of this project. (Admin view)",
@@ -921,8 +889,97 @@
     "description": "Manage the labels for your project.",
     "title": "Labels"
   },
+  "ProjectLabelsTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteLabel": {
+        "deleteLabel": "Delete Label",
+        "deletingLabel": "Deleting label...",
+        "description": "This action cannot be undone. This will permanently delete the label \"{labelName}\" ({labelId}) and remove the association with this label from all terms that are currently using it. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search labels by name or ID..."
+    },
+    "invalidIcon": "Invalid icon",
+    "noColor": "No color",
+    "noDescription": "No description",
+    "noIcon": "No icon",
+    "sheet": {
+      "close": "Close",
+      "editLabel": {
+        "colorLabel": "Color (optional)",
+        "description": "Update the details of the label. Changes to the label will be reflected in all terms that are associated with this label.",
+        "descriptionLabel": "Description (optional)",
+        "descriptionPlaceholder": "Enter a description for the label",
+        "iconLabel": "Icon (optional)",
+        "labelNameLabel": "Label Name",
+        "labelNamePlaceholder": "Enter a name for the label",
+        "title": "Edit {labelName} ({labelId})",
+        "updateLabel": "Update Label",
+        "updatingLabel": "Updating label..."
+      }
+    },
+    "table": {
+      "noLabelsFound": "No labels found matching \"{query}\".",
+      "noLabelsFoundGeneric": "No labels found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "color": "Color",
+      "description": "Description",
+      "icon": "Icon",
+      "id": "ID",
+      "name": "Name"
+    },
+    "toast": {
+      "deleteFailed": "Failed to delete label. Please try again.",
+      "deleteSuccess": "The label \"{labelName}\" ({labelId}) has been successfully deleted.",
+      "updateFailed": "Failed to update label. Please try again.",
+      "updateSuccess": "The label \"{labelName}\" ({labelId}) has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDelete": "You don't have permission to delete labels in this project.",
+      "noPermissionUpdate": "You don't have permission to update labels in this project."
+    }
+  },
   "ProjectLayout": {
     "notFoundTitle": "Project Not Found"
+  },
+  "ProjectLocalesTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "removeLocale": {
+        "description": "This action cannot be undone. This will permanently remove the locale \"{localeName}\" ({localeId}) from the project and all associated translations in this locale. Please be certain.",
+        "removeLocale": "Remove Locale",
+        "removingLocale": "Removing locale...",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search locales by name, code, or ID..."
+    },
+    "invalidFlag": "Invalid flag",
+    "noFlag": "No flag",
+    "table": {
+      "noLocalesFound": "No locales found matching \"{query}\".",
+      "noLocalesFoundGeneric": "No locales found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "code": "Code",
+      "flag": "Flag",
+      "id": "ID",
+      "name": "Name"
+    },
+    "toast": {
+      "removeFailed": "Failed to remove locale. Please try again.",
+      "removeSuccess": "The locale \"{localeName}\" has been successfully removed from the project."
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to remove locales from this project."
+    }
   },
   "ProjectNavigation": {
     "invalidProject": "Invalid Project",
