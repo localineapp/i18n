@@ -619,6 +619,31 @@
       "deleteFailed": "Failed to delete your account. Please try again."
     }
   },
+  "DeleteProjectCard": {
+    "button": {
+      "deleteProject": "Delete Project"
+    },
+    "card": {
+      "description": "Once you delete your project, there is no going back. Deleting your project will remove all attached data from the system.",
+      "title": "Delete Project"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteProject": {
+        "deleteProject": "Delete Project",
+        "deletingProject": "Deleting project...",
+        "description": "This action cannot be undone. This will permanently delete the project \"{name}\" ({id}) and all associated data. Please be certain.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "toast": {
+      "deleteFailed": "Failed to delete project. Please try again.",
+      "deleteSuccess": "The project \"{name}\" ({id}) has been successfully deleted."
+    },
+    "tooltip": {
+      "noPermissionDelete": "Only the project owner can delete this project."
+    }
+  },
   "FirstStepsCards": {
     "button": {
       "open": "Open"
@@ -740,6 +765,47 @@
     },
     "title": "You have been invited to join {projectName}"
   },
+  "InvitationsDialog": {
+    "badge": {
+      "expired": "Expired"
+    },
+    "button": {
+      "viewInvitations": "Invitations"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "description": "View and manage the invitations for your project. You can resend or revoke invitations as needed.",
+      "revokeInvitation": {
+        "description": "This action cannot be undone. This will permanently revoke the invitation for \"{email}\" and the recipient will no longer be able to accept it.",
+        "revokeInvitation": "Revoke Invitation",
+        "revokingInvitation": "Revoking invitation...",
+        "title": "Are you absolutely sure?"
+      },
+      "title": "Manage Invitations"
+    },
+    "table": {
+      "noInvitationsFound": "No invitations found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "email": "Email",
+      "expiresAt": "Expires At",
+      "id": "ID",
+      "role": "Role"
+    },
+    "toast": {
+      "resendFailed": "Failed to resend the invitation. Please try again.",
+      "resendSuccess": "The invitation for \"{email}\" has been successfully resent.",
+      "revokeFailed": "Failed to revoke the invitation. Please try again.",
+      "revokeSuccess": "The invitation for \"{email}\" has been successfully revoked.",
+      "updateFailed": "Failed to update the invitation. Please try again.",
+      "updateSuccess": "The invitation for \"{email}\" has been successfully updated."
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to manage invitations for this project.",
+      "notExpired": "This invitation is not expired yet. You can only resend expired invitations."
+    }
+  },
   "InvitationsPage": {
     "description": "View your pending invitations to join projects and accept or decline them.",
     "title": "Invitations"
@@ -758,6 +824,30 @@
       "id": "ID",
       "projectName": "Project Name",
       "role": "Role"
+    }
+  },
+  "InviteMemberDialog": {
+    "button": {
+      "inviteMember": "Invite Member"
+    },
+    "dialog": {
+      "close": "Close",
+      "description": "Enter the email address of the person you want to invite and select their role in the project.",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter the email address of the new member",
+      "inviteMember": "Invite Member",
+      "invitingMember": "Inviting member...",
+      "roleLabel": "Role",
+      "title": "Invite New Member"
+    },
+    "toast": {
+      "inviteFailed": "Failed to send the invitation. Please try again.",
+      "inviteSuccess": "The invitation for \"{email}\" has been successfully sent."
+    },
+    "tooltip": {
+      "limitReached": "You have reached the maximum number of members allowed for this project. ({current}/{limit})",
+      "limitZero": "The current plan of this project does not allow inviting members. Please contact your administrator for more information.",
+      "noPermission": "You don't have permission to invite members to this project."
     }
   },
   "MemberInfoCards": {
@@ -885,6 +975,48 @@
       "copyToClipboard": "User ID copied to clipboard."
     }
   },
+  "ProjectDetailsCard": {
+    "card": {
+      "description": "Description:",
+      "name": "Name:",
+      "plan": "Plan:"
+    },
+    "dialog": {
+      "close": "Close",
+      "editDescription": {
+        "description": "Update the description of your project. The project description is used to provide additional information about your project.",
+        "descriptionLabel": "Project Description",
+        "descriptionPlaceholder": "Enter a new project description",
+        "title": "Edit Project Description",
+        "updateDescription": "Update Description",
+        "updatingDescription": "Updating description..."
+      },
+      "editName": {
+        "description": "Update the name of your project. The project name is used to identify your project in the dashboard.",
+        "nameLabel": "Project Name",
+        "namePlaceholder": "Enter a new project name",
+        "title": "Edit Project Name",
+        "updateName": "Update Name",
+        "updatingName": "Updating name..."
+      }
+    },
+    "noDescription": "No description provided",
+    "toast": {
+      "updateDescriptionFailed": "Failed to update project description. Please try again.",
+      "updateDescriptionSuccess": "The project description has been successfully updated.",
+      "updateNameFailed": "Failed to update project name. Please try again.",
+      "updateNameSuccess": "The project name has been successfully updated to \"{name}\"."
+    },
+    "tooltip": {
+      "noPermissionUpdateDescription": "You don't have permission to update the project description.",
+      "noPermissionUpdateName": "You don't have permission to update the project name."
+    },
+    "unknown": "Unknown"
+  },
+  "ProjectGeneralSettingsPage": {
+    "description": "General settings for your project.",
+    "title": "Settings"
+  },
   "ProjectLabelsPage": {
     "description": "Manage the labels for your project.",
     "title": "Labels"
@@ -981,6 +1113,82 @@
       "noPermission": "You don't have permission to remove locales from this project."
     }
   },
+  "ProjectMembersPage": {
+    "description": "Manage the members for your project.",
+    "title": "Project Members"
+  },
+  "ProjectMembersTable": {
+    "alert": {
+      "removeOwnMembership": {
+        "description": "You are currently removing yourself from the project. Be cautious when performing this action, as it will permanently remove your access to the project and you will no longer be able to manage or view its contents. If you accidentally remove yourself, you will need to contact another administrator to regain access.",
+        "title": "Removing Yourself from the Project"
+      },
+      "updateOwnRole": {
+        "description": "You are currently updating your own role. Be cautious when making changes to your own role, as it may affect your access to certain features in the project. If you accidentally remove your own admin privileges, you may lose access to the project and will need to contact another administrator to restore your access.",
+        "title": "Updating Your Own Role"
+      }
+    },
+    "badge": {
+      "you": "You"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "close": "Close",
+      "removeMember": {
+        "description": "This action cannot be undone. This will permanently remove the member \"{name}\" ({id}) from the project and they will no longer have access to it.",
+        "removeMember": "Remove Member",
+        "removingMember": "Removing member...",
+        "title": "Are you absolutely sure?"
+      },
+      "updateLocales": {
+        "description": "Select the locales that this member should have access to. Changes to the assigned locales may affect the member's ability to edit terms in those locales.",
+        "localesLabel": "Assigned Locales",
+        "title": "Update Assigned Locales for {name} ({id})",
+        "updateLocales": "Update Locales",
+        "updatingLocales": "Updating locales..."
+      },
+      "updateRole": {
+        "description": "Select a new role for this member. Changes to the member's role may affect their permissions and access to certain features in the project.",
+        "roleLabel": "Role",
+        "title": "Update Role for {name} ({id})",
+        "updateRole": "Update Role",
+        "updatingRole": "Updating role..."
+      }
+    },
+    "email": "Email:",
+    "input": {
+      "searchPlaceholder": "Search members by name, email or ID..."
+    },
+    "noAssignedLocales": "No locales assigned",
+    "table": {
+      "noMembersFound": "No members found matching \"{query}\".",
+      "noMembersFoundGeneric": "No members found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "assignedLocales": "Assigned Locales",
+      "id": "ID",
+      "joinedAt": "Joined At",
+      "name": "Name",
+      "role": "Role"
+    },
+    "toast": {
+      "localeAssignmentUpdateFailed": "Failed to update assigned locales. Please try again.",
+      "localeAssignmentUpdateSuccess": "The assigned locales for \"{name}\" ({id}) have been successfully updated.",
+      "removeMemberFailed": "Failed to remove member. Please try again.",
+      "removeMemberSuccess": "The member \"{name}\" ({id}) has been successfully removed from the project.",
+      "roleUpdateFailed": "Failed to update member role. Please try again.",
+      "roleUpdateSuccess": "The role of \"{name}\" ({id}) has been successfully updated to \"{role}\"."
+    },
+    "tooltip": {
+      "noPermissionRemoveMember": "You don't have permission to remove members from this project.",
+      "noPermissionUpdateLocales": "You don't have permission to update member locales in this project.",
+      "noPermissionUpdateRole": "You don't have permission to update member roles in this project.",
+      "ownerCannotBeRemoved": "The owner can't be removed from the project.",
+      "ownerCannotChangeLocales": "The owner can't have specific locales assigned.",
+      "ownerCannotChangeRole": "The role of the project owner cannot be changed."
+    }
+  },
   "ProjectNavigation": {
     "invalidProject": "Invalid Project",
     "noDescription": "No description."
@@ -1026,6 +1234,10 @@
   "ProjectsPage": {
     "description": "Select a project you're a part of, or create a new one to get started.",
     "title": "Projects"
+  },
+  "ProjectWorkflowSettingsPage": {
+    "description": "Workflow settings for your project.",
+    "title": "Workflows"
   },
   "PublicProfilePage": {
     "description": "View and manage your public profile information.",
