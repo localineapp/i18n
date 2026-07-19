@@ -107,7 +107,7 @@
     },
     "toast": {
       "addFailed": "Failed to add locale. Please try again.",
-      "addSuccess": "The locale \"{locale}\" has been successfully added to the project.",
+      "addSuccess": "The locale \"{localeDisplayName}\" ({localeId}) has been successfully added to the project.",
       "noLocaleSelected": "Please select a locale to add."
     },
     "tooltip": {
@@ -126,7 +126,7 @@
       "deleteLocale": {
         "deleteLocale": "Delete Locale",
         "deletingLocale": "Deleting locale...",
-        "description": "This action cannot be undone. This will permanently delete the locale \"{displayName}\" ({id}) and all associated translations in all projects. Please be certain.",
+        "description": "This action cannot be undone. This will permanently delete the locale \"{localeDisplayName}\" ({localeId}) and all associated translations in all projects. Please be certain.",
         "title": "Are you absolutely sure?"
       }
     },
@@ -155,7 +155,7 @@
         "languagePlaceholder": "English",
         "regionLabel": "Region (optional)",
         "regionPlaceholder": "United States",
-        "title": "Edit {displayName} ({id})",
+        "title": "Edit {localeDisplayName} ({localeId})",
         "updateLocale": "Update Locale",
         "updatingLocale": "Updating locale..."
       }
@@ -177,9 +177,9 @@
     },
     "toast": {
       "deleteFailed": "Failed to delete locale. Please try again.",
-      "deleteSuccess": "The locale \"{displayName}\" ({id}) has been successfully deleted.",
+      "deleteSuccess": "The locale \"{localeDisplayName}\" ({localeId}) has been successfully deleted.",
       "updateFailed": "Failed to update locale. Please try again.",
-      "updateSuccess": "The locale \"{displayName}\" ({id}) has been successfully updated."
+      "updateSuccess": "The locale \"{localeDisplayName}\" ({localeId}) has been successfully updated."
     },
     "tooltip": {
       "noPermissionDelete": "You don't have permission to delete locales.",
@@ -196,7 +196,7 @@
       "deletePlan": {
         "deletePlan": "Delete Plan",
         "deletingPlan": "Deleting plan...",
-        "description": "This action cannot be undone. This will permanently delete the plan \"{displayName}\" ({id}) and remove the association with this plan from all projects that are currently using it. Please be certain.",
+        "description": "This action cannot be undone. This will permanently delete the plan \"{planDisplayName}\" ({planId}) and remove the association with this plan from all projects that are currently using it. Please be certain.",
         "title": "Are you absolutely sure?"
       }
     },
@@ -227,7 +227,7 @@
         "membersLimitPlaceholder": "Enter a members limit for the plan",
         "termsLimitLabel": "Terms Limit (Empty for unlimited)",
         "termsLimitPlaceholder": "Enter a terms limit for the plan",
-        "title": "Edit {displayName} ({id})",
+        "title": "Edit {planDisplayName} ({planId})",
         "updatePlan": "Update Plan",
         "updatingPlan": "Updating plan..."
       }
@@ -249,13 +249,13 @@
       "termsLimit": "Terms"
     },
     "toast": {
-      "alreadyDefault": "The plan \"{displayName}\" ({id}) is already set as the default plan.",
+      "alreadyDefault": "The plan \"{planDisplayName}\" ({planId}) is already set as the default plan.",
       "deleteFailed": "Failed to delete plan. Please try again.",
-      "deleteSuccess": "The plan \"{displayName}\" ({id}) has been successfully deleted.",
+      "deleteSuccess": "The plan \"{planDisplayName}\" ({planId}) has been successfully deleted.",
       "setDefaultFailed": "Failed to set default plan. Please try again.",
-      "setDefaultSuccess": "The plan \"{displayName}\" ({id}) has been successfully set as the default plan.",
+      "setDefaultSuccess": "The plan \"{planDisplayName}\" ({planId}) has been successfully set as the default plan.",
       "updateFailed": "Failed to update plan. Please try again.",
-      "updateSuccess": "The plan \"{displayName}\" ({id}) has been successfully updated."
+      "updateSuccess": "The plan \"{planDisplayName}\" ({planId}) has been successfully updated."
     },
     "tooltip": {
       "noPermissionDelete": "You don't have permission to delete plans.",
@@ -318,7 +318,7 @@
       "deleteUser": {
         "deleteUser": "Delete User",
         "deletingUser": "Deleting user...",
-        "description": "This action cannot be undone. This will permanently delete the user \"{name}\" ({id}) and all associated data, including their projects. Please be certain.",
+        "description": "This action cannot be undone. This will permanently delete the user \"{userName}\" ({userId}) and all associated data, including their projects. Please be certain.",
         "title": "Are you absolutely sure?"
       }
     },
@@ -350,7 +350,7 @@
         "roleAdmin": "Admin",
         "roleLabel": "Role",
         "roleUser": "User",
-        "title": "Edit {name} ({id})",
+        "title": "Edit {userName} ({userId})",
         "updateUser": "Update User",
         "updatingUser": "Updating user..."
       }
@@ -371,9 +371,9 @@
       "banExpiresFuture": "Ban expires must be a date in the future. Please enter a valid date and try again.",
       "banExpiresInvalid": "Ban expires must be a valid date in the future. Please enter a valid date and try again.",
       "deleteFailed": "Failed to delete user. Please try again.",
-      "deleteSuccess": "The user \"{name}\" ({id}) has been successfully deleted.",
+      "deleteSuccess": "The user \"{userName}\" ({userId}) has been successfully deleted.",
       "impersonationFailed": "Failed to impersonate user. Please try again.",
-      "impersonationSuccess": "You are now impersonating {name} ({id}). To stop impersonating, please log out and log back in to your account.",
+      "impersonationSuccess": "You are now impersonating {userName} ({userId}). To stop impersonating, please log out and log back in to your account.",
       "nameAndEmailRequired": "Name and email are required fields. Please fill them in and try again.",
       "noChanges": "No changes were made to the user.",
       "projectsLimitEmpty": "Projects limit cannot be empty. Please enter a valid number and try again.",
@@ -382,7 +382,7 @@
       "updateGenericFailed": "Failed to update user. Please try again.",
       "updatePasswordFailed": "Failed to update user password. Please try again.",
       "updateRoleFailed": "Failed to update user role. Please try again.",
-      "updateSuccess": "The user \"{name}\" ({id}) has been successfully updated."
+      "updateSuccess": "The user \"{userName}\" ({userId}) has been successfully updated."
     },
     "tooltip": {
       "cannotDeleteSelf": "You can't delete your own account.",
@@ -401,7 +401,7 @@
       "deleteApiKey": {
         "deleteApiKey": "Delete API Key",
         "deletingApiKey": "Deleting API key...",
-        "description": "Are you sure you want to delete the API key \"{name}\" (ID: {id})? This action cannot be undone.",
+        "description": "Are you sure you want to delete the API key \"{apiKeyName}\" (ID: {apiKeyId})? This action cannot be undone.",
         "title": "Delete API Key"
       }
     },
@@ -576,7 +576,7 @@
     },
     "toast": {
       "creationFailed": "Failed to create locale. Please try again.",
-      "creationSuccess": "The locale \"{displayName}\" ({code}) has been successfully created."
+      "creationSuccess": "The locale \"{localeDisplayName}\" ({localeCode}) has been successfully created."
     },
     "tooltip": {
       "noPermission": "You don't have permission to create new locales."
@@ -599,7 +599,7 @@
     },
     "toast": {
       "creationFailed": "Failed to create plan. Please try again.",
-      "creationSuccess": "The plan \"{displayName}\" has been successfully created."
+      "creationSuccess": "The plan \"{planDisplayName}\" ({planId}) has been successfully created."
     },
     "tooltip": {
       "noPermission": "You don't have permission to create new plans."
@@ -718,13 +718,13 @@
       "deleteProject": {
         "deleteProject": "Delete Project",
         "deletingProject": "Deleting project...",
-        "description": "This action cannot be undone. This will permanently delete the project \"{name}\" ({id}) and all associated data. Please be certain.",
+        "description": "This action cannot be undone. This will permanently delete the project \"{projectName}\" ({projectId}) and all associated data. Please be certain.",
         "title": "Are you absolutely sure?"
       }
     },
     "toast": {
       "deleteFailed": "Failed to delete project. Please try again.",
-      "deleteSuccess": "The project \"{name}\" ({id}) has been successfully deleted."
+      "deleteSuccess": "The project \"{projectName}\" ({projectId}) has been successfully deleted."
     },
     "tooltip": {
       "noPermissionDelete": "Only the project owner can delete this project."
@@ -1091,7 +1091,7 @@
       "updateDescriptionFailed": "Failed to update project description. Please try again.",
       "updateDescriptionSuccess": "The project description has been successfully updated.",
       "updateNameFailed": "Failed to update project name. Please try again.",
-      "updateNameSuccess": "The project name has been successfully updated to \"{name}\"."
+      "updateNameSuccess": "The project name has been successfully updated to \"{projectName}\"."
     },
     "tooltip": {
       "noPermissionUpdateDescription": "You don't have permission to update the project description.",
@@ -1193,7 +1193,7 @@
     },
     "toast": {
       "removeFailed": "Failed to remove locale. Please try again.",
-      "removeSuccess": "The locale \"{localeName}\" has been successfully removed from the project."
+      "removeSuccess": "The locale \"{localeDisplayName}\" ({localeId}) has been successfully removed from the project."
     },
     "tooltip": {
       "noPermission": "You don't have permission to remove locales from this project."
@@ -1221,7 +1221,7 @@
       "cancel": "Cancel",
       "close": "Close",
       "removeMember": {
-        "description": "This action cannot be undone. This will permanently remove the member \"{name}\" ({id}) from the project and they will no longer have access to it.",
+        "description": "This action cannot be undone. This will permanently remove the member \"{userName}\" ({memberId}) from the project and they will no longer have access to it.",
         "removeMember": "Remove Member",
         "removingMember": "Removing member...",
         "title": "Are you absolutely sure?"
@@ -1229,14 +1229,14 @@
       "updateLocales": {
         "description": "Select the locales that this member should have access to. Changes to the assigned locales may affect the member's ability to edit terms in those locales.",
         "localesLabel": "Assigned Locales",
-        "title": "Update Assigned Locales for {name} ({id})",
+        "title": "Update Assigned Locales for {userName} ({memberId})",
         "updateLocales": "Update Locales",
         "updatingLocales": "Updating locales..."
       },
       "updateRole": {
         "description": "Select a new role for this member. Changes to the member's role may affect their permissions and access to certain features in the project.",
         "roleLabel": "Role",
-        "title": "Update Role for {name} ({id})",
+        "title": "Update Role for {userName} ({memberId})",
         "updateRole": "Update Role",
         "updatingRole": "Updating role..."
       }
@@ -1260,11 +1260,11 @@
     },
     "toast": {
       "localeAssignmentUpdateFailed": "Failed to update assigned locales. Please try again.",
-      "localeAssignmentUpdateSuccess": "The assigned locales for \"{name}\" ({id}) have been successfully updated.",
+      "localeAssignmentUpdateSuccess": "The assigned locales for \"{userName}\" ({memberId}) have been successfully updated.",
       "removeMemberFailed": "Failed to remove member. Please try again.",
-      "removeMemberSuccess": "The member \"{name}\" ({id}) has been successfully removed from the project.",
+      "removeMemberSuccess": "The member \"{userName}\" ({memberId}) has been successfully removed from the project.",
       "roleUpdateFailed": "Failed to update member role. Please try again.",
-      "roleUpdateSuccess": "The role of \"{name}\" ({id}) has been successfully updated to \"{role}\"."
+      "roleUpdateSuccess": "The role of \"{userName}\" ({memberId}) has been successfully updated to \"{roleName}\"."
     },
     "tooltip": {
       "noPermissionRemoveMember": "You don't have permission to remove members from this project.",
