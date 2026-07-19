@@ -7,6 +7,92 @@
     "description": "You do not have permission to access this resource. Please contact your administrator if you believe this is an mistake.",
     "title": "Access Denied"
   },
+  "CreateMemberRoleDialog": {
+    "toast": {
+      "createFailed": "Failed to create member role. Please try again.",
+      "createSuccess": "The member role \"{roleName}\" has been successfully created."
+    },
+    "button": {
+      "createMemberRole": "Create Role"
+    },
+    "tooltip": {
+      "noPermission": "You don't have permission to manage member roles in this project.",
+      "limitReached": "You have reached the maximum number of member roles allowed for this project. ({current}/{limit})"
+    },
+    "dialog": {
+      "title": "Create Member Role",
+      "description": "Create a new member role for this project.",
+      "nameLabel": "Role Name",
+      "namePlaceholder": "Enter a name for the role",
+      "close": "Close",
+      "createMemberRole": "Create Role",
+      "creatingMemberRole": "Creating role..."
+    }
+  },
+  "ProjectMemberRolesTable": {
+    "input": {
+      "searchPlaceholder": "Search member roles by name or ID..."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "id": "ID",
+      "name": "Name",
+      "color": "Color",
+      "permissions": "Permissions",
+      "icon": "Icon",
+      "ownerRoleHover": "This is the owner role of the project. The permissions of this role cannot be modified and it cannot be deleted."
+    },
+    "noColor": "No color",
+    "invalidIcon": "Invalid icon",
+    "noIcon": "No icon",
+    "noPermissions": "No permissions",
+    "table": {
+      "noRolesFound": "No member roles found matching \"{query}\".",
+      "noRolesFoundGeneric": "No member roles found."
+    },
+    "toast": {
+      "updateRoleFailed": "Failed to update member role. Please try again.",
+      "updateRoleSuccess": "The member role \"{roleName}\" has been successfully updated.",
+      "updatePermissionsFailed": "Failed to update member role permissions. Please try again.",
+      "updatePermissionsSuccess": "The permissions for the member role \"{roleName}\" have been successfully updated.",
+      "deleteRoleFailed": "Failed to delete member role. Please try again.",
+      "deleteRoleSuccess": "The member role \"{roleName}\" has been successfully deleted."
+    },
+    "tooltip": {
+      "noPermissionEditRole": "You don't have permission to edit roles.",
+      "noPermissionEditPermissions": "You don't have permission to edit role permissions.",
+      "noPermissionDeleteRole": "You don't have permission to delete roles.",
+      "ownerRoleEditPermissions": "The Owner role always has all permissions and cannot be edited.",
+      "ownerRoleDelete": "The Owner role cannot be deleted as it is required for the project to function properly."
+    },
+    "sheet": {
+      "editRole": {
+        "title": "Edit {roleName} ({roleId})",
+        "description": "Update the details of the member role. Changes to the role will be reflected in all members that have this role.",
+        "nameLabel": "Role Name",
+        "colorLabel": "Role Color (optional)",
+        "iconLabel": "Role Icon (optional)",
+        "updateRole": "Update Role",
+        "updatingRole": "Updating role..."
+      },
+      "editPermissions": {
+        "title": "Edit Permissions for {roleName} ({roleId})",
+        "description": "Update the permissions of the member role. Changes to the permissions will be reflected in all members that have this role.",
+        "updatePermissions": "Update Permissions",
+        "updatingPermissions": "Updating permissions..."
+      },
+      "close": "Close"
+    },
+    "dialog": {
+      "deleteRole": {
+        "title": "Are you absolutely sure?",
+        "description": "This action cannot be undone. This will permanently delete the role \"{roleName}\" ({roleId}).",
+        "deleteRole": "Delete Role",
+        "deletingRole": "Deleting role..."
+      },
+      "cancel": "Cancel"
+    }
+  },
   "AddLocaleDialog": {
     "button": {
       "addLocale": "Add Locale"
