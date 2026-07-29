@@ -55,7 +55,7 @@
     "none": "None",
     "sheet": {
       "close": "Close",
-      "editLocale": {
+      "updateLocale": {
         "codeLabel": "Locale Code",
         "codePlaceholder": "en_US",
         "description": "Update the details of the locale. Changes to the locale will be reflected in all projects that use this locale.",
@@ -69,7 +69,7 @@
         "languagePlaceholder": "English",
         "regionLabel": "Region (optional)",
         "regionPlaceholder": "United States",
-        "title": "Edit {localeDisplayName} ({localeId})",
+        "title": "Update \"{localeDisplayName}\" ({localeId})",
         "updateLocale": "Update Locale",
         "updatingLocale": "Updating locale..."
       }
@@ -127,7 +127,7 @@
     },
     "sheet": {
       "close": "Close",
-      "editPlan": {
+      "updatePlan": {
         "description": "Update the details of the plan. Changes to the plan will be reflected in all projects that are associated with this plan.",
         "descriptionLabel": "Description (optional)",
         "descriptionPlaceholder": "Enter a description for the plan (optional)",
@@ -141,7 +141,7 @@
         "membersLimitPlaceholder": "Enter a members limit for the plan",
         "termsLimitLabel": "Terms Limit (Empty for unlimited)",
         "termsLimitPlaceholder": "Enter a terms limit for the plan",
-        "title": "Edit {planDisplayName} ({planId})",
+        "title": "Update \"{planDisplayName}\" ({planId})",
         "updatePlan": "Update Plan",
         "updatingPlan": "Updating plan..."
       }
@@ -224,8 +224,8 @@
   },
   "AdminUsersTable": {
     "alert": {
-      "editingSelfDescription": "You are currently editing your own account. Be cautious when making changes to your own role or banned status, as it may affect your access to the system. If you accidentally remove your own admin privileges or ban yourself, you may lose access to the admin dashboard and will need to contact another administrator to restore your access.",
-      "editingSelfTitle": "Editing Your Own Account"
+      "updatingSelfDescription": "You are currently updating your own account. Be cautious when making changes to your own role or banned status, as it may affect your access to the system. If you accidentally remove your own admin privileges or ban yourself, you may lose access to the admin dashboard and will need to contact another administrator to restore your access.",
+      "updatingSelfTitle": "Updating Your Own Account"
     },
     "dialog": {
       "cancel": "Cancel",
@@ -241,7 +241,7 @@
     },
     "sheet": {
       "close": "Close",
-      "editUser": {
+      "updateUser": {
         "banExpiresLabel": "Ban Expires",
         "banExpiresPlaceholder": "Enter the date when the ban expires",
         "bannedLabel": "Banned",
@@ -264,7 +264,7 @@
         "roleAdmin": "Admin",
         "roleLabel": "Role",
         "roleUser": "User",
-        "title": "Edit {userName} ({userId})",
+        "title": "Update \"{userName}\" ({userId})",
         "updateUser": "Update User",
         "updatingUser": "Updating user..."
       }
@@ -959,7 +959,7 @@
     },
     "dialog": {
       "close": "Close",
-      "editAvatar": {
+      "updateAvatar": {
         "avatar": {
           "github": {
             "description": "Use the avatar from your linked GitHub account.",
@@ -981,15 +981,15 @@
         },
         "description": "Upload a new avatar image to display on your profile. Supported formats are JPEG and PNG.",
         "preview": "Avatar Preview:",
-        "title": "Edit Avatar",
+        "title": "Update Avatar",
         "updateAvatar": "Update Avatar",
         "updatingAvatar": "Updating avatar..."
       },
-      "editName": {
+      "updateName": {
         "description": "Enter your new name that you want to display on your profile.",
         "inputLabel": "Name",
         "inputPlaceholder": "Enter your name",
-        "title": "Edit Name",
+        "title": "Update Name",
         "updateName": "Update Name",
         "updatingName": "Updating name..."
       }
@@ -1030,19 +1030,19 @@
     },
     "dialog": {
       "close": "Close",
-      "editDescription": {
+      "updateDescription": {
         "description": "Update the description of your project. The project description is used to provide additional information about your project.",
         "descriptionLabel": "Project Description",
         "descriptionPlaceholder": "Enter a new project description",
-        "title": "Edit Project Description",
+        "title": "Update Project Description",
         "updateDescription": "Update Description",
         "updatingDescription": "Updating description..."
       },
-      "editName": {
+      "updateName": {
         "description": "Update the name of your project. The project name is used to identify your project in the dashboard.",
         "nameLabel": "Project Name",
         "namePlaceholder": "Enter a new project name",
-        "title": "Edit Project Name",
+        "title": "Update Project Name",
         "updateName": "Update Name",
         "updatingName": "Updating name..."
       }
@@ -1087,7 +1087,7 @@
     "noIcon": "No icon",
     "sheet": {
       "close": "Close",
-      "editLabel": {
+      "updateLabel": {
         "colorLabel": "Color (optional)",
         "description": "Update the details of the label. Changes to the label will be reflected in all terms that are associated with this label.",
         "descriptionLabel": "Description (optional)",
@@ -1095,7 +1095,7 @@
         "iconLabel": "Icon (optional)",
         "labelNameLabel": "Label Name",
         "labelNamePlaceholder": "Enter a name for the label",
-        "title": "Edit {labelName} ({labelId})",
+        "title": "Update \"{labelName}\" ({labelId})",
         "updateLabel": "Update Label",
         "updatingLabel": "Updating label..."
       }
@@ -1179,18 +1179,18 @@
     "noPermissions": "No permissions",
     "sheet": {
       "close": "Close",
-      "editPermissions": {
+      "updatePermissions": {
         "description": "Update the permissions of the member role. Changes to the permissions will be reflected in all members that have this role.",
-        "title": "Edit Permissions for {roleName} ({roleId})",
+        "title": "Update Permissions for \"{roleName}\" ({roleId})",
         "updatePermissions": "Update Permissions",
         "updatingPermissions": "Updating permissions..."
       },
-      "editRole": {
+      "updateRole": {
         "colorLabel": "Role Color (optional)",
         "description": "Update the details of the member role. Changes to the role will be reflected in all members that have this role.",
         "iconLabel": "Role Icon (optional)",
         "nameLabel": "Role Name",
-        "title": "Edit {roleName} ({roleId})",
+        "title": "Update \"{roleName}\" ({roleId})",
         "updateRole": "Update Role",
         "updatingRole": "Updating role..."
       }
@@ -1218,10 +1218,10 @@
     },
     "tooltip": {
       "noPermissionDeleteRole": "You don't have permission to delete roles.",
-      "noPermissionEditPermissions": "You don't have permission to edit role permissions.",
-      "noPermissionEditRole": "You don't have permission to edit roles.",
+      "noPermissionUpdatePermissions": "You don't have permission to update role permissions in this project.",
+      "noPermissionUpdateRole": "You don't have permission to update roles in this project.",
       "ownerRoleDelete": "The Owner role cannot be deleted as it is required for the project to function properly.",
-      "ownerRoleEditPermissions": "The Owner role always has all permissions and cannot be edited."
+      "ownerRoleUpdatePermissions": "The Owner role always has all permissions and cannot be modified."
     }
   },
   "ProjectMembersPage": {
@@ -1482,11 +1482,11 @@
         "updatingPassword": "Changing password..."
       },
       "close": "Close",
-      "editEmail": {
+      "updateEmail": {
         "description": "Enter your new email address that you want to associate with your account.",
         "inputLabel": "New Email",
         "inputPlaceholder": "Enter your new email address",
-        "title": "Edit Email",
+        "title": "Update Email",
         "updateEmail": "Update Email",
         "updatingEmail": "Updating email..."
       }
