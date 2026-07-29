@@ -169,7 +169,7 @@
       "code": "Locale Code",
       "displayName": "Display Name",
       "enabled": "Enabled",
-      "enabledHover": "Indicates whether the locale can be selected by users in their projects.",
+      "enabledHoverContent": "Indicates whether the locale can be selected by users in their projects.",
       "flag": "Flag",
       "id": "ID",
       "language": "Language",
