@@ -7,92 +7,6 @@
     "description": "You do not have permission to access this resource. Please contact your administrator if you believe this is an mistake.",
     "title": "Access Denied"
   },
-  "CreateMemberRoleDialog": {
-    "toast": {
-      "createFailed": "Failed to create member role. Please try again.",
-      "createSuccess": "The member role \"{roleName}\" has been successfully created."
-    },
-    "button": {
-      "createMemberRole": "Create Role"
-    },
-    "tooltip": {
-      "noPermission": "You don't have permission to manage member roles in this project.",
-      "limitReached": "You have reached the maximum number of member roles allowed for this project. ({current}/{limit})"
-    },
-    "dialog": {
-      "title": "Create Member Role",
-      "description": "Create a new member role for this project.",
-      "nameLabel": "Role Name",
-      "namePlaceholder": "Enter a name for the role",
-      "close": "Close",
-      "createMemberRole": "Create Role",
-      "creatingMemberRole": "Creating role..."
-    }
-  },
-  "ProjectMemberRolesTable": {
-    "input": {
-      "searchPlaceholder": "Search member roles by name or ID..."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "id": "ID",
-      "name": "Name",
-      "color": "Color",
-      "permissions": "Permissions",
-      "icon": "Icon",
-      "ownerRoleHover": "This is the owner role of the project. The permissions of this role cannot be modified and it cannot be deleted."
-    },
-    "noColor": "No color",
-    "invalidIcon": "Invalid icon",
-    "noIcon": "No icon",
-    "noPermissions": "No permissions",
-    "table": {
-      "noRolesFound": "No member roles found matching \"{query}\".",
-      "noRolesFoundGeneric": "No member roles found."
-    },
-    "toast": {
-      "updateRoleFailed": "Failed to update member role. Please try again.",
-      "updateRoleSuccess": "The member role \"{roleName}\" has been successfully updated.",
-      "updatePermissionsFailed": "Failed to update member role permissions. Please try again.",
-      "updatePermissionsSuccess": "The permissions for the member role \"{roleName}\" have been successfully updated.",
-      "deleteRoleFailed": "Failed to delete member role. Please try again.",
-      "deleteRoleSuccess": "The member role \"{roleName}\" has been successfully deleted."
-    },
-    "tooltip": {
-      "noPermissionEditRole": "You don't have permission to edit roles.",
-      "noPermissionEditPermissions": "You don't have permission to edit role permissions.",
-      "noPermissionDeleteRole": "You don't have permission to delete roles.",
-      "ownerRoleEditPermissions": "The Owner role always has all permissions and cannot be edited.",
-      "ownerRoleDelete": "The Owner role cannot be deleted as it is required for the project to function properly."
-    },
-    "sheet": {
-      "editRole": {
-        "title": "Edit {roleName} ({roleId})",
-        "description": "Update the details of the member role. Changes to the role will be reflected in all members that have this role.",
-        "nameLabel": "Role Name",
-        "colorLabel": "Role Color (optional)",
-        "iconLabel": "Role Icon (optional)",
-        "updateRole": "Update Role",
-        "updatingRole": "Updating role..."
-      },
-      "editPermissions": {
-        "title": "Edit Permissions for {roleName} ({roleId})",
-        "description": "Update the permissions of the member role. Changes to the permissions will be reflected in all members that have this role.",
-        "updatePermissions": "Update Permissions",
-        "updatingPermissions": "Updating permissions..."
-      },
-      "close": "Close"
-    },
-    "dialog": {
-      "deleteRole": {
-        "title": "Are you absolutely sure?",
-        "description": "This action cannot be undone. This will permanently delete the role \"{roleName}\" ({roleId}).",
-        "deleteRole": "Delete Role",
-        "deletingRole": "Deleting role..."
-      },
-      "cancel": "Cancel"
-    }
-  },
   "AddLocaleDialog": {
     "button": {
       "addLocale": "Add Locale"
@@ -582,6 +496,28 @@
       "noPermission": "You don't have permission to create new locales."
     }
   },
+  "CreateMemberRoleDialog": {
+    "button": {
+      "createMemberRole": "Create Role"
+    },
+    "dialog": {
+      "close": "Close",
+      "createMemberRole": "Create Role",
+      "creatingMemberRole": "Creating role...",
+      "description": "Create a new member role for this project.",
+      "nameLabel": "Role Name",
+      "namePlaceholder": "Enter a name for the role",
+      "title": "Create Member Role"
+    },
+    "toast": {
+      "createFailed": "Failed to create member role. Please try again.",
+      "createSuccess": "The member role \"{roleName}\" has been successfully created."
+    },
+    "tooltip": {
+      "limitReached": "You have reached the maximum number of member roles allowed for this project. ({current}/{limit})",
+      "noPermission": "You don't have permission to manage member roles in this project."
+    }
+  },
   "CreatePlanDialog": {
     "button": {
       "createPlan": "Create Plan"
@@ -630,6 +566,31 @@
       "limitExceeded": "You have reached the maximum number of projects allowed for your account. ({current}/{limit})",
       "limitZero": "Your account is not allowed to create projects. Please contact your administrator for more information.",
       "noDefaultPlan": "No default plan is set. Please contact your administrator to set a default plan before creating projects."
+    }
+  },
+  "CreateTermDialog": {
+    "button": {
+      "createTerm": "Create Term"
+    },
+    "dialog": {
+      "close": "Close",
+      "contextLabel": "Context (optional)",
+      "contextPlaceholder": "A brief context for your term",
+      "createTerm": "Create Term",
+      "creatingTerm": "Creating term...",
+      "description": "Add a new term to your project.",
+      "keyLabel": "Term Key",
+      "keyPlaceholder": "message.welcome",
+      "title": "Create New Term"
+    },
+    "toast": {
+      "createFailed": "Failed to create term. Please try again.",
+      "createSuccess": "The term \"{termKey}\" has been successfully created."
+    },
+    "tooltip": {
+      "limitReached": "This project has reached the maximum number of terms allowed by your plan ({current}/{limit}).",
+      "limitZero": "Your current plan does not allow adding terms.",
+      "noPermission": "You don't have permission to create terms in this project."
     }
   },
   "DashboardAlerts": {
@@ -1199,6 +1160,70 @@
       "noPermission": "You don't have permission to remove locales from this project."
     }
   },
+  "ProjectMemberRolesTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteRole": {
+        "deleteRole": "Delete Role",
+        "deletingRole": "Deleting role...",
+        "description": "This action cannot be undone. This will permanently delete the role \"{roleName}\" ({roleId}).",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search member roles by name or ID..."
+    },
+    "invalidIcon": "Invalid icon",
+    "noColor": "No color",
+    "noIcon": "No icon",
+    "noPermissions": "No permissions",
+    "sheet": {
+      "close": "Close",
+      "editPermissions": {
+        "description": "Update the permissions of the member role. Changes to the permissions will be reflected in all members that have this role.",
+        "title": "Edit Permissions for {roleName} ({roleId})",
+        "updatePermissions": "Update Permissions",
+        "updatingPermissions": "Updating permissions..."
+      },
+      "editRole": {
+        "colorLabel": "Role Color (optional)",
+        "description": "Update the details of the member role. Changes to the role will be reflected in all members that have this role.",
+        "iconLabel": "Role Icon (optional)",
+        "nameLabel": "Role Name",
+        "title": "Edit {roleName} ({roleId})",
+        "updateRole": "Update Role",
+        "updatingRole": "Updating role..."
+      }
+    },
+    "table": {
+      "noRolesFound": "No member roles found matching \"{query}\".",
+      "noRolesFoundGeneric": "No member roles found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "color": "Color",
+      "icon": "Icon",
+      "id": "ID",
+      "name": "Name",
+      "ownerRoleHover": "This is the owner role of the project. The permissions of this role cannot be modified and it cannot be deleted.",
+      "permissions": "Permissions"
+    },
+    "toast": {
+      "deleteRoleFailed": "Failed to delete member role. Please try again.",
+      "deleteRoleSuccess": "The member role \"{roleName}\" has been successfully deleted.",
+      "updatePermissionsFailed": "Failed to update member role permissions. Please try again.",
+      "updatePermissionsSuccess": "The permissions for the member role \"{roleName}\" have been successfully updated.",
+      "updateRoleFailed": "Failed to update member role. Please try again.",
+      "updateRoleSuccess": "The member role \"{roleName}\" has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDeleteRole": "You don't have permission to delete roles.",
+      "noPermissionEditPermissions": "You don't have permission to edit role permissions.",
+      "noPermissionEditRole": "You don't have permission to edit roles.",
+      "ownerRoleDelete": "The Owner role cannot be deleted as it is required for the project to function properly.",
+      "ownerRoleEditPermissions": "The Owner role always has all permissions and cannot be edited."
+    }
+  },
   "ProjectMembersPage": {
     "description": "Manage the members for your project.",
     "title": "Project Members"
@@ -1320,6 +1345,65 @@
   "ProjectsPage": {
     "description": "Select a project you're a part of, or create a new one to get started.",
     "title": "Projects"
+  },
+  "ProjectTermsPage": {
+    "description": "Manage terms for your project.",
+    "title": "Terms"
+  },
+  "ProjectTermsTable": {
+    "dialog": {
+      "cancel": "Cancel",
+      "deleteTerm": {
+        "deleteTerm": "Delete Term",
+        "deletingTerm": "Deleting term...",
+        "description": "This action cannot be undone. This will permanently remove the term \"{termKey}\" ({termId}) and all associated translations in the projects. Please confirm that you want to proceed.",
+        "title": "Are you absolutely sure?"
+      }
+    },
+    "input": {
+      "searchPlaceholder": "Search terms by ID, key, or context..."
+    },
+    "noContext": "No context",
+    "sheet": {
+      "close": "Close",
+      "updateTerm": {
+        "contextLabel": "Context (optional)",
+        "description": "Update the details of the term. Changes to the term will be reflected in all translations.",
+        "keyLabel": "Term Key",
+        "lockedLabel": "Locked",
+        "lockedNo": "No",
+        "lockedYes": "Yes",
+        "title": "Update \"{termKey}\" ({termId})",
+        "updateTerm": "Update Term",
+        "updatingTerm": "Updating term..."
+      }
+    },
+    "table": {
+      "noTermsFound": "No terms found matching \"{query}\".",
+      "noTermsFoundGeneric": "No terms found."
+    },
+    "tableHeader": {
+      "actions": "Actions",
+      "context": "Context",
+      "id": "ID",
+      "key": "Key",
+      "locked": "Locked",
+      "lockedHoverContent": "In order to translate locked terms, the editor must have the \"TRANSLATE_LOCKED\" permission."
+    },
+    "toast": {
+      "deleteFailed": "Failed to delete term. Please try again.",
+      "deleteSuccess": "The term \"{termKey}\" ({termId}) has been successfully deleted.",
+      "lockSuccess": "The term \"{termKey}\" ({termId}) has been successfully locked.",
+      "unlockSuccess": "The term \"{termKey}\" ({termId}) has been successfully unlocked.",
+      "updateFailed": "Failed to update term. Please try again.",
+      "updateLockedFailed": "Failed to update term lock status. Please try again.",
+      "updateSuccess": "The term \"{termKey}\" ({termId}) has been successfully updated."
+    },
+    "tooltip": {
+      "noPermissionDelete": "You don't have permission to delete terms in this project.",
+      "noPermissionLock": "You don't have permission to lock or unlock terms in this project.",
+      "noPermissionUpdate": "You don't have permission to update terms in this project."
+    }
   },
   "ProjectWorkflowSettingsPage": {
     "description": "Workflow settings for your project.",
