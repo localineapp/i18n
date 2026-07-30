@@ -1405,6 +1405,78 @@
       "noPermissionUpdate": "You don't have permission to update terms in this project."
     }
   },
+  "ProjectTranslationLocalesCards": {
+    "card": {
+      "button": {
+        "viewTranslations": "View Translations"
+      },
+      "content": {
+        "notAllowedToTranslate": "You don't have permission to translate this locale. (Read-only access)"
+      }
+    },
+    "empty": {
+      "button": {
+        "goToLocales": "Go to Locales"
+      },
+      "description": "There are no locales available for this project. Please add a locale to start translating terms.",
+      "title": "No Locales Found"
+    }
+  },
+  "ProjectTranslationLocalesPage": {
+    "description": "Select a locale to view and manage translations for your project.",
+    "title": "Translations"
+  },
+  "ProjectTranslationReferencePopover": {
+    "availableLocales": "{count, plural, =0 {No locales available} =1 {# locale available} other {# locales available}}",
+    "button": {
+      "clearReferenceLocale": "Clear reference locale",
+      "selectReferenceLocale": "Select a reference locale"
+    },
+    "input": {
+      "searchPlaceholder": "Search locales by name, code or region..."
+    },
+    "noLocalesFound": "No locales available for selection.",
+    "tooltip": {
+      "oneLocale": "You need at least two locales in your project to set a reference locale."
+    }
+  },
+  "ProjectTranslationsCard": {
+    "card": {
+      "description": "{translatedTermsCount} out of {totalTermsCount} terms have translations in this locale.",
+      "title": "Translations for {localeDisplayName} ({localeCode})"
+    },
+    "empty": {
+      "button": {
+        "goBack": "Go Back"
+      },
+      "description": "The locale \"{localeCode}\" does not exist in this project. Please select a valid locale to view translations.",
+      "title": "Locale Not Found"
+    },
+    "input": {
+      "searchPlaceholder": "Search terms by key or context..."
+    },
+    "table": {
+      "noTermsFound": "No terms found matching \"{query}\".",
+      "noTermsFoundGeneric": "No terms found.",
+      "row": {
+        "noReferenceTranslation": "No reference translation available",
+        "referenceTranslationLabel": "Found reference translation in {referenceLocaleDisplayName} ({referenceLocaleCode})",
+        "translationPlaceholder": "Enter translation..."
+      }
+    },
+    "tableHeader": {
+      "key": "Term Key",
+      "translation": "Translation"
+    },
+    "toast": {
+      "saveFailed": "Failed to save translation. Please try again.",
+      "saveSuccess": "Translation for \"{termKey}\" has been successfully saved."
+    }
+  },
+  "ProjectTranslationsPage": {
+    "description": "Manage translations for your project.",
+    "title": "Translate"
+  },
   "ProjectWorkflowSettingsPage": {
     "description": "Workflow settings for your project.",
     "title": "Workflows"
