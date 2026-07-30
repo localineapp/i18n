@@ -88,7 +88,8 @@
       "noLocalesFoundGeneric": "No locales found.",
       "row": {
         "invalidFlag": "Invalid flag code",
-        "none": "None"
+        "noFlag": "No flag specified",
+        "noRegion": "No region specified"
       }
     },
     "toast": {
