@@ -370,8 +370,8 @@
   },
   "ApiPage": {
     "button": {
-      "deprecated": "deprecated",
       "v1": "API v1",
+      "v1_deprecated": "Deprecated",
       "v2": "API v2"
     },
     "description": "Browse the API documentation for Localine.",
