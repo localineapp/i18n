@@ -741,7 +741,7 @@
     },
     "noFlagsFound": "No flags found matching \"{query}\".",
     "placeholder": "Select a flag",
-    "searchAmount": "{count} flags"
+    "searchAmount": "{count, plural, one {# flag} other {# flags}}"
   },
   "IconPickerField": {
     "button": {
@@ -753,7 +753,7 @@
     },
     "noIconsFound": "No icons found matching \"{query}\".",
     "placeholder": "Select a Lucide icon",
-    "searchAmount": "{count} icons"
+    "searchAmount": "{count, plural, one {# icon} other {# icons}}"
   },
   "ImportLocalesDialog": {
     "alert": {
@@ -917,6 +917,18 @@
       "limitZero": "The current plan of this project does not allow inviting members. Please contact your administrator for more information.",
       "noPermission": "You don't have permission to invite members to this project."
     }
+  },
+  "LocalePickerField": {
+    "button": {
+      "clearSelection": "Clear selection",
+      "none": "None"
+    },
+    "input": {
+      "searchPlaceholder": "Search locales by name, code or region..."
+    },
+    "noLocalesFound": "No locales found matching \"{query}\".",
+    "placeholder": "Select a locale",
+    "searchAmount": "{count, plural, one {# locale} other {# locales}}"
   },
   "MemberInfoCards": {
     "joinedAt": {
@@ -1148,6 +1160,18 @@
   },
   "ProjectLayout": {
     "notFoundTitle": "Project Not Found"
+  },
+  "ProjectLocalesPicker": {
+    "button": {
+      "clearSelection": "Clear selection"
+    },
+    "input": {
+      "searchPlaceholder": "Search locales by name, code or region..."
+    },
+    "noLocalesFound": "No locales found matching \"{query}\".",
+    "placeholder": "Select a locale",
+    "searchAmount": "{count, plural, one {# locale} other {# locales}}",
+    "selectedLocales": "{count} selected"
   },
   "ProjectLocalesTable": {
     "dialog": {
@@ -1549,6 +1573,18 @@
       "revokeFailed": "Failed to revoke sessions. Please try again.",
       "sessionsRevoked": "All sessions revoked except the current one."
     }
+  },
+  "RolePickerField": {
+    "button": {
+      "clearSelection": "Clear selection",
+      "none": "None"
+    },
+    "input": {
+      "searchPlaceholder": "Search roles by name or ID..."
+    },
+    "noRolesFound": "No roles found matching \"{query}\".",
+    "placeholder": "Select a role",
+    "searchAmount": "{count, plural, one {# role} other {# roles}}"
   },
   "SecurityDetailsCard": {
     "button": {
