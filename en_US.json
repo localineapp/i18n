@@ -51,8 +51,6 @@
     "input": {
       "searchPlaceholder": "Search locales by name, language, region, code or ID..."
     },
-    "invalidFlag": "Invalid flag code",
-    "none": "None",
     "sheet": {
       "close": "Close",
       "updateLocale": {
@@ -75,19 +73,23 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "code": "Locale Code",
+        "displayName": "Display Name",
+        "enabled": "Enabled",
+        "enabledHoverContent": "Indicates whether the locale can be selected by users in their projects.",
+        "flag": "Flag",
+        "id": "ID",
+        "language": "Language",
+        "region": "Region"
+      },
       "noLocalesFound": "No locales found matching \"{query}\".",
-      "noLocalesFoundGeneric": "No locales found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "code": "Locale Code",
-      "displayName": "Display Name",
-      "enabled": "Enabled",
-      "enabledHoverContent": "Indicates whether the locale can be selected by users in their projects.",
-      "flag": "Flag",
-      "id": "ID",
-      "language": "Language",
-      "region": "Region"
+      "noLocalesFoundGeneric": "No locales found.",
+      "row": {
+        "invalidFlag": "Invalid flag code",
+        "none": "None"
+      }
     },
     "toast": {
       "deleteFailed": "Failed to delete locale. Please try again.",
@@ -147,20 +149,26 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "default": "Default",
+        "defaultHover": "The default plan is automatically associated with new projects that are created without a specified plan.",
+        "description": "Description",
+        "displayName": "Display Name",
+        "id": "ID",
+        "labelsLimit": "Labels",
+        "localesLimit": "Locales",
+        "membersLimit": "Members",
+        "termsLimit": "Terms"
+      },
       "noPlansFound": "No plans found matching \"{query}\".",
-      "noPlansFoundGeneric": "No plans found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "default": "Default",
-      "defaultHover": "The default plan is automatically associated with new projects that are created without a specified plan.",
-      "description": "Description",
-      "displayName": "Display Name",
-      "id": "ID",
-      "labelsLimit": "Labels",
-      "localesLimit": "Locales",
-      "membersLimit": "Members",
-      "termsLimit": "Terms"
+      "noPlansFoundGeneric": "No plans found.",
+      "row": {
+        "unlimitedLabels": "∞",
+        "unlimitedLocales": "∞",
+        "unlimitedMembers": "∞",
+        "unlimitedTerms": "∞"
+      }
     },
     "toast": {
       "alreadyDefault": "The plan \"{planDisplayName}\" ({planId}) is already set as the default plan.",
@@ -174,8 +182,7 @@
     "tooltip": {
       "noPermissionDelete": "You don't have permission to delete plans.",
       "noPermissionUpdate": "You don't have permission to update plans."
-    },
-    "unlimited": "∞"
+    }
   },
   "AdminProjectsPage": {
     "description": "View and manage all projects in the system.",
@@ -198,17 +205,21 @@
     "input": {
       "searchPlaceholder": "Search projects by name or ID..."
     },
-    "noOwner": "No owner information",
     "table": {
+      "header": {
+        "actions": "Actions",
+        "description": "Description",
+        "id": "ID",
+        "name": "Name",
+        "owner": "Owner"
+      },
       "noProjectsFound": "No projects found matching \"{query}\".",
-      "noProjectsFoundGeneric": "No projects found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "description": "Description",
-      "id": "ID",
-      "name": "Name",
-      "owner": "Owner"
+      "noProjectsFoundGeneric": "No projects found.",
+      "row": {
+        "noDescription": "No description provided",
+        "noOwner": "No owner information available",
+        "unknownUser": "Unknown user"
+      }
     },
     "toast": {
       "updatePlanFailed": "Failed to update project plan. Please try again.",
@@ -270,16 +281,21 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "banned": "Banned",
+        "email": "Email",
+        "id": "ID",
+        "name": "Name",
+        "role": "Role"
+      },
       "noUsersFound": "No users found matching \"{query}\".",
-      "noUsersFoundGeneric": "No users found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "banned": "Banned",
-      "email": "Email",
-      "id": "ID",
-      "name": "Name",
-      "role": "Role"
+      "noUsersFoundGeneric": "No users found.",
+      "row": {
+        "badge": {
+          "you": "You"
+        }
+      }
     },
     "toast": {
       "banExpiresFuture": "Ban expires must be a date in the future. Please enter a valid date and try again.",
@@ -302,8 +318,7 @@
       "cannotDeleteSelf": "You can't delete your own account.",
       "cannotImpersonateBanned": "You can't impersonate a banned user.",
       "cannotImpersonateSelf": "You can't impersonate yourself."
-    },
-    "you": "You"
+    }
   },
   "ApiKeysPage": {
     "description": "Manage your API keys and view their details.",
@@ -326,20 +341,23 @@
     "input": {
       "searchPlaceholder": "Search API keys by name or ID..."
     },
-    "never": "Never",
     "table": {
+      "header": {
+        "actions": "Actions",
+        "createdAt": "Created At",
+        "enabled": "Enabled",
+        "expiresAt": "Expires At",
+        "id": "ID",
+        "lastUsed": "Last Used",
+        "name": "Name",
+        "rateLimited": "Rate Limited"
+      },
       "noApiKeysFound": "No API keys found matching \"{query}\".",
-      "noApiKeysFoundGeneric": "No API keys found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "createdAt": "Created At",
-      "enabled": "Enabled",
-      "expiresAt": "Expires At",
-      "id": "ID",
-      "lastUsed": "Last Used",
-      "name": "Name",
-      "rateLimited": "Rate Limited"
+      "noApiKeysFoundGeneric": "No API keys found.",
+      "row": {
+        "expiresAtNever": "Never",
+        "lastRequestNever": "Never"
+      }
     },
     "toast": {
       "apiKeyDeleted": "The API key has been successfully deleted.",
@@ -813,9 +831,6 @@
     "title": "You have been invited to join {projectName}"
   },
   "InvitationsDialog": {
-    "badge": {
-      "expired": "Expired"
-    },
     "button": {
       "viewInvitations": "Invitations"
     },
@@ -831,14 +846,19 @@
       "title": "Manage Invitations"
     },
     "table": {
-      "noInvitationsFound": "No invitations found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "email": "Email",
-      "expiresAt": "Expires At",
-      "id": "ID",
-      "role": "Role"
+      "header": {
+        "actions": "Actions",
+        "email": "Email",
+        "expiresAt": "Expires At",
+        "id": "ID",
+        "role": "Role"
+      },
+      "noInvitationsFound": "No invitations found.",
+      "row": {
+        "badge": {
+          "expired": "Expired"
+        }
+      }
     },
     "toast": {
       "resendFailed": "Failed to resend the invitation. Please try again.",
@@ -862,15 +882,15 @@
       "searchPlaceholder": "Search invitations by project name or ID..."
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "expiresAt": "Expires At",
+        "id": "ID",
+        "projectName": "Project Name",
+        "role": "Role"
+      },
       "noInvitationsFound": "No invitations found matching \"{query}\".",
       "noInvitationsFoundGeneric": "No invitations found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "expiresAt": "Expires At",
-      "id": "ID",
-      "projectName": "Project Name",
-      "role": "Role"
     }
   },
   "InviteMemberDialog": {
@@ -1081,10 +1101,6 @@
     "input": {
       "searchPlaceholder": "Search labels by name or ID..."
     },
-    "invalidIcon": "Invalid icon",
-    "noColor": "No color",
-    "noDescription": "No description",
-    "noIcon": "No icon",
     "sheet": {
       "close": "Close",
       "updateLabel": {
@@ -1101,16 +1117,22 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "color": "Color",
+        "description": "Description",
+        "icon": "Icon",
+        "id": "ID",
+        "name": "Name"
+      },
       "noLabelsFound": "No labels found matching \"{query}\".",
-      "noLabelsFoundGeneric": "No labels found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "color": "Color",
-      "description": "Description",
-      "icon": "Icon",
-      "id": "ID",
-      "name": "Name"
+      "noLabelsFoundGeneric": "No labels found.",
+      "row": {
+        "invalidIcon": "Invalid icon",
+        "noColor": "No color",
+        "noDescription": "No description",
+        "noIcon": "No icon"
+      }
     },
     "toast": {
       "deleteFailed": "Failed to delete label. Please try again.",
@@ -1139,18 +1161,20 @@
     "input": {
       "searchPlaceholder": "Search locales by name, code, or ID..."
     },
-    "invalidFlag": "Invalid flag",
-    "noFlag": "No flag",
     "table": {
+      "header": {
+        "actions": "Actions",
+        "code": "Code",
+        "flag": "Flag",
+        "id": "ID",
+        "name": "Name"
+      },
       "noLocalesFound": "No locales found matching \"{query}\".",
-      "noLocalesFoundGeneric": "No locales found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "code": "Code",
-      "flag": "Flag",
-      "id": "ID",
-      "name": "Name"
+      "noLocalesFoundGeneric": "No locales found.",
+      "row": {
+        "invalidFlag": "Invalid flag",
+        "noFlag": "No flag"
+      }
     },
     "toast": {
       "removeFailed": "Failed to remove locale. Please try again.",
@@ -1170,13 +1194,12 @@
         "title": "Are you absolutely sure?"
       }
     },
+    "hoverCard": {
+      "ownerRole": "This is the owner role of the project. The permissions of this role cannot be modified and it cannot be deleted."
+    },
     "input": {
       "searchPlaceholder": "Search member roles by name or ID..."
     },
-    "invalidIcon": "Invalid icon",
-    "noColor": "No color",
-    "noIcon": "No icon",
-    "noPermissions": "No permissions",
     "sheet": {
       "close": "Close",
       "updatePermissions": {
@@ -1196,17 +1219,22 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "color": "Color",
+        "icon": "Icon",
+        "id": "ID",
+        "name": "Name",
+        "permissions": "Permissions"
+      },
       "noRolesFound": "No member roles found matching \"{query}\".",
-      "noRolesFoundGeneric": "No member roles found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "color": "Color",
-      "icon": "Icon",
-      "id": "ID",
-      "name": "Name",
-      "ownerRoleHover": "This is the owner role of the project. The permissions of this role cannot be modified and it cannot be deleted.",
-      "permissions": "Permissions"
+      "noRolesFoundGeneric": "No member roles found.",
+      "row": {
+        "invalidIcon": "Invalid icon",
+        "noColor": "No color",
+        "noIcon": "No icon",
+        "noPermissions": "No permissions"
+      }
     },
     "toast": {
       "deleteRoleFailed": "Failed to delete member role. Please try again.",
@@ -1239,9 +1267,6 @@
         "title": "Updating Your Own Role"
       }
     },
-    "badge": {
-      "you": "You"
-    },
     "dialog": {
       "cancel": "Cancel",
       "close": "Close",
@@ -1266,22 +1291,27 @@
         "updatingRole": "Updating role..."
       }
     },
-    "email": "Email:",
     "input": {
       "searchPlaceholder": "Search members by name, email or ID..."
     },
-    "noAssignedLocales": "No locales assigned",
     "table": {
+      "header": {
+        "actions": "Actions",
+        "assignedLocales": "Assigned Locales",
+        "id": "ID",
+        "joinedAt": "Joined At",
+        "name": "Name",
+        "role": "Role"
+      },
       "noMembersFound": "No members found matching \"{query}\".",
-      "noMembersFoundGeneric": "No members found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "assignedLocales": "Assigned Locales",
-      "id": "ID",
-      "joinedAt": "Joined At",
-      "name": "Name",
-      "role": "Role"
+      "noMembersFoundGeneric": "No members found.",
+      "row": {
+        "badge": {
+          "you": "You"
+        },
+        "email": "Email:",
+        "noAssignedLocales": "No locales assigned"
+      }
     },
     "toast": {
       "localeAssignmentUpdateFailed": "Failed to update assigned locales. Please try again.",
@@ -1327,15 +1357,15 @@
       "title": "No Projects Yet"
     },
     "table": {
-      "noDescription": "None",
-      "tableHeader": {
+      "header": {
         "actions": "Actions",
         "description": "Description",
         "id": "ID",
         "name": "Name",
         "plan": "Plan",
         "role": "Role"
-      }
+      },
+      "noDescription": "No description"
     },
     "toggleGroup": {
       "cardView": "Cards",
@@ -1363,7 +1393,6 @@
     "input": {
       "searchPlaceholder": "Search terms by ID, key, or context..."
     },
-    "noContext": "No context",
     "sheet": {
       "close": "Close",
       "updateTerm": {
@@ -1379,16 +1408,19 @@
       }
     },
     "table": {
+      "header": {
+        "actions": "Actions",
+        "context": "Context",
+        "id": "ID",
+        "key": "Key",
+        "locked": "Locked",
+        "lockedHoverContent": "In order to translate locked terms, the editor must have the \"TRANSLATE_LOCKED\" permission."
+      },
       "noTermsFound": "No terms found matching \"{query}\".",
-      "noTermsFoundGeneric": "No terms found."
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "context": "Context",
-      "id": "ID",
-      "key": "Key",
-      "locked": "Locked",
-      "lockedHoverContent": "In order to translate locked terms, the editor must have the \"TRANSLATE_LOCKED\" permission."
+      "noTermsFoundGeneric": "No terms found.",
+      "row": {
+        "noContext": "No context"
+      }
     },
     "toast": {
       "deleteFailed": "Failed to delete term. Please try again.",
@@ -1456,6 +1488,10 @@
       "searchPlaceholder": "Search terms by key or context..."
     },
     "table": {
+      "header": {
+        "key": "Term Key",
+        "translation": "Translation"
+      },
       "noTermsFound": "No terms found matching \"{query}\".",
       "noTermsFoundGeneric": "No terms found.",
       "row": {
@@ -1463,10 +1499,6 @@
         "referenceTranslationLabel": "Found reference translation in {referenceLocaleDisplayName} ({referenceLocaleCode})",
         "translationPlaceholder": "Enter translation..."
       }
-    },
-    "tableHeader": {
-      "key": "Term Key",
-      "translation": "Translation"
     },
     "toast": {
       "saveFailed": "Failed to save translation. Please try again.",
@@ -1582,18 +1614,26 @@
   },
   "SessionsTable": {
     "table": {
-      "createdAt": "Created {date}",
-      "noIpAddress": "No IP address information",
+      "header": {
+        "actions": "Actions",
+        "device": "Device",
+        "expiresAt": "Expires At",
+        "ipAddress": "IP Address",
+        "session": "Session"
+      },
       "noSessions": "No active sessions found.",
-      "noUserAgent": "No user agent information",
-      "updatedAt": "Updated {date}"
-    },
-    "tableHeader": {
-      "actions": "Actions",
-      "device": "Device",
-      "expiresAt": "Expires At",
-      "ipAddress": "IP Address",
-      "session": "Session"
+      "row": {
+        "badge": {
+          "activeSession": "Active",
+          "currentSession": "Current"
+        },
+        "createdAt": "Created {date}",
+        "expiresAt": "{date}",
+        "noIpAddress": "No IP address information",
+        "noUserAgent": "No user agent information",
+        "updatedAt": "Updated {date}",
+        "userAgent": "{browserLabel} • {userAgent}"
+      }
     },
     "toast": {
       "copyFailed": "Failed to copy session ID. Please try again.",
