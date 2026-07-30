@@ -811,7 +811,7 @@
     }
   },
   "InvitationPage": {
-    "description": "You have received an invitation to join the project \"{projectName}\" with the role of {role}. Please accept or decline the invitation.",
+    "description": "You have received an invitation to join the project \"{projectName}\" with the role of {roleName}. Please accept or decline the invitation.",
     "empty": {
       "button": {
         "goToDashboard": "Go back to dashboard"
