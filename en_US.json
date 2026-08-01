@@ -1,4 +1,13 @@
 {
+  "AuthLayout": {
+    "description": "“The open translation management platform that helps teams collaborate on localization. Simple, fast, and developer-friendly.”",
+    "subtitle": "— Manage translations across all your projects",
+    "features": {
+      "formats": "Multiple formats",
+      "team": "Team collaboration",
+      "api": "API access"
+    }
+  },
   "AccessDeniedPage": {
     "button": {
       "goToDashboard": "Go back to dashboard",
