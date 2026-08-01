@@ -32,6 +32,9 @@
   },
   "AdminLocalesPage": {
     "description": "View and manage all locales in the system.",
+    "metadata": {
+      "title": "Locales"
+    },
     "title": "Locales"
   },
   "AdminLocalesTable": {
@@ -105,6 +108,9 @@
   },
   "AdminPlansPage": {
     "description": "View and manage all plans in the system.",
+    "metadata": {
+      "title": "Plans"
+    },
     "title": "Plans"
   },
   "AdminPlansTable": {
@@ -187,6 +193,9 @@
   },
   "AdminProjectsPage": {
     "description": "View and manage all projects in the system.",
+    "metadata": {
+      "title": "Projects"
+    },
     "title": "Projects"
   },
   "AdminProjectsTable": {
@@ -232,6 +241,9 @@
   },
   "AdminUsersPage": {
     "description": "View and manage all users in the system.",
+    "metadata": {
+      "title": "Users"
+    },
     "title": "Users"
   },
   "AdminUsersTable": {
@@ -323,6 +335,9 @@
   },
   "ApiKeysPage": {
     "description": "Manage your API keys and view their details.",
+    "metadata": {
+      "title": "API Keys"
+    },
     "title": "API Keys"
   },
   "ApiKeysTable": {
@@ -446,6 +461,9 @@
   },
   "ConnectionsPage": {
     "description": "Manage your connected accounts. You can connect your account to third-party services for easier sign-in.",
+    "metadata": {
+      "title": "Connections"
+    },
     "title": "Connections"
   },
   "CreateApiKeyDialog": {
@@ -659,6 +677,9 @@
   },
   "DashboardPage": {
     "description": "Look forward to the latest features and improvements of Localine.",
+    "metadata": {
+      "title": "Dashboard"
+    },
     "title": "Dashboard"
   },
   "DataExportCard": {
@@ -769,7 +790,9 @@
     }
   },
   "ForgotPasswordPage": {
-    "title": "Forgot Password"
+    "metadata": {
+      "title": "Forgot Password"
+    }
   },
   "IconPickerField": {
     "button": {
@@ -854,8 +877,8 @@
       }
     },
     "metadata": {
-      "notFoundTitle": "Invitation Not Found",
-      "title": "{projectName}"
+      "title": "{projectName}",
+      "titleNotFound": "Invitation Not Found"
     },
     "title": "You have been invited to join {projectName}"
   },
@@ -904,6 +927,9 @@
   },
   "InvitationsPage": {
     "description": "View your pending invitations to join projects and accept or decline them.",
+    "metadata": {
+      "title": "Invitations"
+    },
     "title": "Invitations"
   },
   "InvitationsTable": {
@@ -1123,11 +1149,15 @@
   },
   "ProjectGeneralSettingsPage": {
     "description": "General settings for your project.",
-    "title": "Settings"
+    "metadata": {
+      "title": "Settings"
+    }
   },
   "ProjectLabelsPage": {
     "description": "Manage the labels for your project.",
-    "title": "Labels"
+    "metadata": {
+      "title": "Labels"
+    }
   },
   "ProjectLabelsTable": {
     "dialog": {
@@ -1189,6 +1219,12 @@
   "ProjectLayout": {
     "notFoundTitle": "Project Not Found"
   },
+  "ProjectLocalesPage": {
+    "description": "Manage the locales for your project.",
+    "metadata": {
+      "title": "Locales"
+    }
+  },
   "ProjectLocalesPicker": {
     "button": {
       "clearSelection": "Clear selection"
@@ -1235,6 +1271,12 @@
     },
     "tooltip": {
       "noPermission": "You don't have permission to remove locales from this project."
+    }
+  },
+  "ProjectMemberRoleSettingsPage": {
+    "description": "Manage the settings for the member role \"{roleName}\" ({roleId}) in your project.",
+    "metadata": {
+      "title": "Member Role Settings"
     }
   },
   "ProjectMemberRolesTable": {
@@ -1307,7 +1349,9 @@
   },
   "ProjectMembersPage": {
     "description": "Manage the members for your project.",
-    "title": "Project Members"
+    "metadata": {
+      "title": "Project Members"
+    }
   },
   "ProjectMembersTable": {
     "alert": {
@@ -1427,11 +1471,16 @@
   },
   "ProjectsPage": {
     "description": "Select a project you're a part of, or create a new one to get started.",
+    "metadata": {
+      "title": "Projects"
+    },
     "title": "Projects"
   },
   "ProjectTermsPage": {
     "description": "Manage terms for your project.",
-    "title": "Terms"
+    "metadata": {
+      "title": "Terms"
+    }
   },
   "ProjectTermsTable": {
     "dialog": {
@@ -1509,7 +1558,9 @@
   },
   "ProjectTranslationLocalesPage": {
     "description": "Select a locale to view and manage translations for your project.",
-    "title": "Translations"
+    "metadata": {
+      "title": "Translations"
+    }
   },
   "ProjectTranslationReferencePopover": {
     "availableLocales": "{count, plural, =0 {No locales available} =1 {# locale available} other {# locales available}}",
@@ -1560,14 +1611,21 @@
   },
   "ProjectTranslationsPage": {
     "description": "Manage translations for your project.",
-    "title": "Translate"
+    "metadata": {
+      "title": "Translate"
+    }
   },
   "ProjectWorkflowSettingsPage": {
     "description": "Workflow settings for your project.",
-    "title": "Workflows"
+    "metadata": {
+      "title": "Workflow Settings"
+    }
   },
   "PublicProfilePage": {
     "description": "View and manage your public profile information.",
+    "metadata": {
+      "title": "Public Profile"
+    },
     "title": "Public Profile"
   },
   "ResetPasswordForm": {
@@ -1592,7 +1650,9 @@
     }
   },
   "ResetPasswordPage": {
-    "title": "Reset Password"
+    "metadata": {
+      "title": "Reset Password"
+    }
   },
   "RevokeAllSessionsDialog": {
     "button": {
@@ -1695,10 +1755,16 @@
   },
   "SecurityPage": {
     "description": "Manage your security settings and preferences.",
+    "metadata": {
+      "title": "Security"
+    },
     "title": "Security"
   },
   "SessionsPage": {
     "description": "Manage your active sessions and view their details.",
+    "metadata": {
+      "title": "Sessions"
+    },
     "title": "Sessions"
   },
   "SessionsTable": {
@@ -1758,7 +1824,9 @@
     }
   },
   "SignInPage": {
-    "title": "Sign In"
+    "metadata": {
+      "title": "Sign In"
+    }
   },
   "SignUpForm": {
     "button": {
@@ -1791,7 +1859,9 @@
     }
   },
   "SignUpPage": {
-    "title": "Sign Up"
+    "metadata": {
+      "title": "Sign Up"
+    }
   },
   "SocialAuthButtons": {
     "badge": {
