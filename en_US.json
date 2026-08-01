@@ -1,4 +1,16 @@
 {
+  "ForgotPasswordPage": {
+    "title": "Forgot Password"
+  },
+  "ResetPasswordPage": {
+    "title": "Reset Password"
+  },
+  "SignInPage": {
+    "title": "Sign In"
+  },
+  "SignUpPage": {
+    "title": "Sign Up"
+  },
   "AuthLayout": {
     "description": "“The open translation management platform that helps teams collaborate on localization. Simple, fast, and developer-friendly.”",
     "subtitle": "— Manage translations across all your projects",
