@@ -101,6 +101,15 @@
       "title": "Or register with"
     }
   },
+  "SocialAuthButtons": {
+    "toast": {
+      "requestFailed": "Unable to redirect to {provider}. ({message})",
+      "requestSent": "Redirecting to {provider} for authentication..."
+    },
+    "badge": {
+      "lastUsed": "Last used"
+    }
+  },
   "AuthLayout": {
     "description": "“The open translation management platform that helps teams collaborate on localization. Simple, fast, and developer-friendly.”",
     "subtitle": "— Manage translations across all your projects",
