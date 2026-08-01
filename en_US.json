@@ -11,6 +11,96 @@
   "SignUpPage": {
     "title": "Sign Up"
   },
+  "ForgotPasswordForm": {
+    "title": "Forgot Password",
+    "description": "Enter your email address and we'll send you a link to reset your password.",
+    "emailLabel": "Email",
+    "button": {
+      "submit": "Send Reset Link"
+    },
+    "footer": {
+      "backToSignIn": "Remember your password?",
+      "signIn": "Sign in"
+    },
+    "toast": {
+      "resetLinkSentError": "Unable to send password reset email. If the issue persists, please contact your administrator.",
+      "resetLinkSentSuccess": "A password reset link has been sent to {email}. Please check your email for further instructions."
+    }
+  },
+  "ResetPasswordForm": {
+    "toast": {
+      "resetPasswordFailed": "Unable to reset password. If the issue persists, please contact your administrator.",
+      "resetPasswordSuccess": "Your password has been reset successfully. You can now sign in with your new password."
+    },
+    "title": "Reset Password",
+    "description": "Please enter your new password.",
+    "passwordLabel": "New Password",
+    "passwordPlaceholder": "Enter your new password",
+    "button": {
+      "reset": "Reset Password"
+    },
+    "missingToken": {
+      "title": "Missing Token",
+      "description": "The password reset link is invalid. Please make sure you copied the entire link from your email and try again.",
+      "footer": {
+        "backToForgotPassword": "Forgot your password?",
+        "forgotPassword": "Reset it"
+      }
+    }
+  },
+  "SignInForm": {
+    "toast": {
+      "signInSuccess": "You have been signed in successfully.",
+      "signInFailed": "Unable to sign in. Please check your credentials."
+    },
+    "title": "Sign into your account",
+    "description": "Welcome back! Please enter your details to sign in.",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPasswordLink": "Forgot password?",
+    "emailLabel": "Email",
+    "rememberMeLabel": "Remember me",
+    "button": {
+      "signIn": "Sign In"
+    },
+    "socialProviders": {
+      "title": "Or continue with"
+    },
+    "footer": {
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    }
+  },
+  "SignUpForm": {
+    "disabled": {
+      "title": "Sign Up Disabled",
+      "description": "The administrator of this instance has disabled new account registrations. Please contact your administrator for more information.",
+      "footer": {
+        "goBackToSignIn": "Already have an account?",
+        "signIn": "Sign in"
+      }
+    },
+    "toast": {
+      "signUpSuccess": "Account created successfully. Please check your email to verify your account.",
+      "signUpFailed": "Unable to create account. Please check your credentials."
+    },
+    "title": "Create your account",
+    "description": "Welcome! Please enter your details to create an account.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "button": {
+      "signUp": "Sign Up"
+    },
+    "footer": {
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "socialProviders": {
+      "title": "Or register with"
+    }
+  },
   "AuthLayout": {
     "description": "“The open translation management platform that helps teams collaborate on localization. Simple, fast, and developer-friendly.”",
     "subtitle": "— Manage translations across all your projects",
